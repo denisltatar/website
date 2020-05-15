@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Denis Tatar</title>
+
+    <!-- 
+        Editing new.html
+        Note to self: If you want to add another coding or design project, follow this proccess. First, 
+        create the new row and make sure you have two cols. Assuming you copied another built coding
+        or projects row, you'll need to change three pieces here within this file. You button should be
+        "myBtn#" if you're creating a coding project, "myBtnd#" for design. Change this with the correct
+        number to follow the pattern I've created. Next, change you Modal id, "myModal#" for coding, and 
+        "myModald#" for design. Lastly, edit your modal content class. "modal-content#" for coding and 
+        "modal-contentd#" for design.
+
+        Editing style.css
+        Copy a design or code project and change the number attached to each componenet you're calling on
+        within this file.
+
+        Editing main.js
+        Do the same you did in style.css. Copy an old project and change the variable numbers accordingly.
+    -->
+
+    <!-- Bootsrap css file -->
+    <!-- <link rel="stylesheet" href="file:///Users/denisltatar/Desktop/Portfolio%20Website/Portfolio-Website/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <!-- Custom css file -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Resposive css file -->
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- Hovering Affects CSS file -->
+    <link href="./Hover-master/css/hover.css" rel="stylesheet" media="all">
+
+    <!-- Adding Pacifo Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Used for Contact form -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    <!-- New font -->
+    
+
+
+</head>
+
+<body>
+
+    <!-- ============================= Start Nav Area ============================= -->
+    <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo"></a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-area">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#new-projects">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-me">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================= End Nav Area ============================= -->
+
+
+
+    <!-- ========================================== Start Main Area ========================================== -->
+    <main class="site-main"> 
+        <!-- ============================= Start Banner Area ============================= -->
+        <section class="site-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 site-title">
+                        <h3 class="title-text">Hey</h3>
+                        <h1 class="title-text text-uppercase">I am Denis Tatar</h1>
+                        <h4 class="title-text text-uppercase">Coder, ML Enthusiast, Graphic Designer</h4>
+                        <div class="site-buttons">
+                            <div class="d-flex flex-row flex-wrap">
+                                <a href="./resume/Denis Tatar Resume.pdf"><button type="button"
+                                        class="btn button primary-button mr-4 text-uppercase">Resume</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <img src="./img/bannerme.png" id="profile-pic" alt="banner-image" class="img-fluid?" width="724" height="703">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============================= End Banner Area ============================= -->
+        <!-- ============================= Start About Area ============================= -->
+        <section class="about-area" id="about-area">
+            <div class="container-fluid" id="about-my-area">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="./img/about-me.png" alt="About us" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>Let me</span>
+                            <span>introduce</span>
+                            <span>myself</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Greetings! I’m a student studying Computer Science and
+                                Business at University of Waterloo and Wilfred Laurier
+                                University.
+                            </p>
+                            <p class="para">
+                                I love to code, design, and take pictures. I love the logic
+                                and structure of coding and always strive to write elegant
+                                and efficient code. When I’m not coding, I love playing
+                                volleyball, tennis, squash, and ping pong. I'm a Rafeal 
+                                Nadal supporter and also have a passion for cars. Scroll below
+                                to view some of my coding and design projects! 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============================= End About Area ============================= -->
+
+
+
+
+        <!-- ============================= Start Projects Area ============================= -->
+        <!-- ========== START Coding Projects ========== -->
+        <section class="new-projects" id="new-projects">
+            <div class="container" id="project-container">
+                <div class="project-title pb-5 text-center">
+                    <h1 class="text-uppercase title-h1" id="project-title">Coding Projects</h1>
+                </div>
+
+                <!-- START FIRST ROW CODING PROJECTS -->
+                <div class="row" id="code-row1">
+                    <!-- START COL 1 -->
+                    <div class="col" id="row1-col1">
+                        <!-- Trigger/Open The Modal -->
+                        <div class="text-center">
+                            <button id="myBtn" id="mobile-cover">
+                                <img id="mobile" src="./img/porsche-app-cover.png" alt="" width="215" height="410">
+                            </button>
+                            <p class="para-bold" id="new-project-title">Porsche Car Connect</p>
+                        </div>
+                
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h4 class="text-center" id="porsche-title">Porsche Car Connect</h4>
+                                <p class="para-bold" id="style-work">Type of Work: Mobile Development (iOS)</p>
+                                <p class="para-bold">Number of Hours: 30+ hours</p>
+                                <p class="para-bold">Software Used:
+                                    <img src=" ./img/photoshop.dms" alt="" width="34" height="33" id="photoshop-icon">
+                                    <img src="./img/illustrator.png" alt="" width="31" height="30" id="illustrator-icon">
+                                    <img src="./img/adobeXD.png" alt="" width="31" height="30" id="xd-icon">
+                                    <img src="./img/xcode.png" alt="" width="33" height="32" id="xcode-icon">
+                                </p>
+                                <p class="para-bold">API Used: 
+                                    <img src=" ./img/firebase-icon.png" alt="" width="34" height="33" id="firebase-icon">
+                                </p>
+                                <p class="para-bold">Languages: Swift 5</p>
+                                <p class="para-bold" id="github-link">Github Repository:
+                                    <a href="https://github.com/denisltatar/My-Second-App">
+                                        <i class="fab fa-github" id="github-repo"></i>
+                                    </a>
+                                </p>
+                                <p class="para">
+                                    I decided to re-create Porsche’s Car
+                                    Connect iOS application. I used Adobe XD, Photoshop, and Illustrator
+                                    to design the layout that you see here. I used
+                                    Xcode to create the app and used the
+                                    Firebase API to store user account information.
+                                    I felt inspired to re-create this application as the "Car Connect" application
+                                    that was on the market at the time looked horrendous. I thought it could look better
+                                    than it did.
+                                </p>
+                                <p class="para">
+                                    Here's what the application looks like:
+                                </p>
+                                <div class="row" id="general-row">
+                                    <div class="col">
+                                        <img src="./img/porsche-app-cover@2x.png" alt="" width="200" height="400">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./img/porsche-home@3x.png" alt="" width="200" height="400">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./img/porsche-temp@3x.png" alt="" width="200" height="400">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./img/porsche-message-success@3x.png" alt="" width="200" height="400">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./img/porsche-message-success@3x.png" alt="" width="200" height="400">
+                                    </div>
+                                </div>
+                
+                                
+                                <!-- Video-->
+                                <p class="para">Here's a video of what the application looks like on a mobile device! Since
+                                        I don't a Porsche, the vehicle information is blank.:</p>
+                                <div class="row text-center" id="general-row">
+                                    <div class="col text-center" id="video-style">
+                                        <iframe width="860" height="615"  src="https://www.youtube.com/embed/1pAtXQWku24" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END COL 1 -->
+                
+                    <!-- START COL 2 -->
+                    <div class="col" id="row1-col2">
+                        <!-- Trigger/Open The Modal -->
+                        <div class="text-center">
+                            <button id="myBtn2">
+                                <img src="./img/privaseeable.png" alt="" width="230" height="410">
+                            </button>
+                            <p class="para-bold" id="new-project-title">PrivaSeeable</p>
+                        </div>
+                
+                        <!-- The Modal -->
+                        <div id="myModal2" class="modal2">
+                
+                            <!-- Modal content -->
+                            <div class="modal-content2">
+                                <span class="close2">&times;</span>
+                                <h4 class="text-center" id="porsche-title">PrivaSeeable</h4>
+                                <p class="para-bold" id="style-work">Type of Work: Front-end Web Development</p>
+                                <p class="para-bold">Number of Hours: 12 hours</p>
+                                <p class="para-bold">Software Used:
+                                    <img src="./img/illustrator.png" alt="" width="31" height="30" id="illustrator-icon">
+                                    <img src="./img/visual-code.png" alt="" width="31" height="30" id="visual-code">
+                                </p>
+                                <p class="para-bold">Languages: HTML, CSS, and JavaScript</p>
+                                <p class="para-bold" id="github-link">Github Repository:
+                                    <a href="https://github.com/denisltatar/PrivaSeeable">
+                                        <i class="fab fa-github" id="github-repo"></i>
+                                    </a>
+                                </p>
+                                <p class="para-bold">Prize: 3rd Place Finalist at CitizenHacks</p>
+                                <p class="para">
+                                    Privaseeable is a hackathon project that was created in September 2019.
+                                    It's a chrome extension that was built to
+                                    maintain a user’s privacy in public settings. My team
+                                    and I used Javascript to create this
+                                    chrome extension that takes advantage
+                                    of CSS elements to maintain user
+                                    privacy by obscuring their screen’s text from
+                                    potential onlookers. We implemented a
+                                    “blur” feature that allows the user to blur
+                                    onscreen text and seletively unblur text by
+                                    holding shift and clicking on a piece of text.
+                                    We implemented a “scramble” feature as
+                                    well which inserts random words in
+                                    between onscreen text.
+                                </p>
+
+                                <!-- Picture of chrome extension -->
+                                <p class="para">Here's what the chrome extension looks like:</p>
+                                <div class="row text-center">
+                                    <div class="col text-center" id="priv-image">
+                                        <img src="./img/privaseeable.png" alt="" idth="430" height="610">
+                                    </div>
+                                </div>
+
+                                <!-- Video -->
+                                <p class="para">Here's a video of what the chome extension can do:</p>
+                                <div class="row text-center" id="general-row">
+                                    <div class="col text-center" id="video-style">
+                                        <iframe width="860" height="615"  src="https://www.youtube.com/embed/azYLz9VGcwo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                
+                            </div>
+                
+                        </div>
+                    </div>
+                    <!-- END COL 2 -->
+                
+
+                
+
+                
+
+
+
+
+                </div>
+                <!-- START FIRST ROW CODING PROJECTS -->
+
+
+                <!-- START SECOND ROW CODING PROJECTS -->
+                <div class="row" id="code-row2">
+                        <!-- START COL 1 -->
+                        <div class="col" id="row1-col1">
+                            <!-- Trigger/Open The Modal -->
+                            <div class="text-center">
+                                <button id="myBtn3">
+                                    <img src="./img/facial-recognition-02.png" alt="" height="380" width="300">
+                                </button>
+                                <p class="para-bold" id="new-project-title">Mood Playlist</p>
+                            </div>
+                    
+                            <!-- The Modal -->
+                            <div id="myModal3" class="modal">
+                    
+                                <!-- Modal content -->
+                                <div class="modal-content3">
+                                    <span class="close3">&times;</span>
+                                    <h4 class="text-center" id="porsche-title">Mood Playlist</h4>
+                                    <p class="para-bold" id="style-work">Type of Work: Front-end Web Development</p>
+                                    <p class="para-bold">Number of Hours: 15+ hours</p>
+                                    <p class="para-bold">Software Used:
+                                        <img src="./img/illustrator.png" alt="" width="31" height="30" id="illustrator-icon">
+                                        <img src="./img/visual-code.png" alt="" width="33" height="32" id="visual-code">
+                                    </p>
+                                    <p class="para-bold">Languages: HTML, CSS, JavaScript</p>
+                                    <p class="para-bold" id="github-link">Github Repository:
+                                        <a href="https://github.com/denisltatar/Mood-Playlist">
+                                            <i class="fab fa-github" id="github-repo"></i>
+                                        </a>
+                                    </p>
+                                    <p class="para">
+                                        Mood Playlist is a project I’m currently
+                                        working on. It involves using machine
+                                        learning to recognize a user’s mood 
+                                        and then play the corresponding
+                                        playlist.  
+                                    </p>                
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END COL 1 -->
+                    
+                        <!-- START COL 2 -->
+                        <div class="col" id="row1-col1">
+                                <!-- Trigger/Open The Modal -->
+                                <div class="text-center">
+                                    <button id="myBtn4">
+                                        <img src="./img/websitepic.png" alt="" height="384" width="420">
+                                    </button>
+                                    <p class="para-bold" id="new-project-title">Portfolio Website</p>
+                                </div>
+                        
+                                <!-- The Modal -->
+                                <div id="myModal4" class="modal">
+                        
+                                    <!-- Modal content -->
+                                    <div class="modal-content4">
+                                        <span class="close4">&times;</span>
+                                        <h4 class="text-center" id="porsche-title">Portfolio Website</h4>
+                                        <p class="para-bold" id="style-work">Type of Work: Front-end Web Development</p>
+                                        <p class="para-bold">Number of Hours: 30+ hours</p>
+                                        <p class="para-bold">Software Used:
+                                            <img src=" ./img/photoshop.dms" alt="" width="34" height="33" id="photoshop-icon">
+                                            <img src="./img/illustrator.png" alt="" width="31" height="30" id="illustrator-icon">
+                                            <img src="./img/adobeXD.png" alt="" width="31" height="30" id="xd-icon">
+                                            <img src="./img/visual-code.png" alt="" width="33" height="32" id="visual-code">
+                                        </p>
+                                        <p class="para-bold">Languages: HTML, CSS, JavaScript</p>
+                                        <p class="para-bold" id="github-link">Github Repository:
+                                            <a href="https://github.com/denisltatar/Portfolio-Website">
+                                                <i class="fab fa-github" id="github-repo"></i>
+                                            </a>
+                                        </p>
+                                        <p class="para">
+                                            I began creating my personal portfolio website back in January of 2020. I began with sketching 
+                                            out a first draft. This draft was pretty decent but I had lots of issues trying to re-create
+                                            the design with HTML, CSS, and JavaScript. I was also very new to web development at
+                                            the time, which made tasks much more difficult to complete. I shifted my focus on re-creating two new drafts.
+                                            I had fun making these drafts and they also didn't take me too long to make. I decided to stick
+                                            to my third draft, which is the design you currently are viewing. Below are some images
+                                            of what my designs looked like.
+                                        </p>
+                                        
+                                        <!-- First Draft -->
+                                        <p class="para">Here's what my first draft looked like (made with my Ipad):</p>
+                                        <div class="row text-center" id="general-row">
+                                            <div class="col">
+                                                <img src="./img/website-design/drawing-draft.jpg" alt="" id="first-post" width="1000" height="1000">
+                                            </div>
+                                        </div>
+
+
+                                        <!-- Second Draft -->
+                                        <p class="para">Second draft (I created just the landing page):</p>
+                                        <div class="row text-center" id="general-row">
+                                            <div class="col">
+                                                <img src="./img/website-design/another-draft.png" alt="" id="first-post" width="950" height="550">
+                                            </div>
+                                        </div>
+
+                                        <!-- Third Draft -->
+                                        <p class="para">Here's the final draft:</p>
+                                        <div class="row text-center" id="general-row">
+                                            <div class="col">
+                                                <img src="./img/website-design/final-draft.png" alt="" id="first-post" width="650" height="2100">
+                                            </div>
+                                        </div>
+
+                                    
+                        
+                        
+                                        
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- END COL 2 -->
+                    
+    
+                    
+    
+                    
+    
+    
+    
+    
+                </div>
+                <!-- END SECOND ROW CODING PROJECTS -->
+
+
+                <!-- START THIRD ROW CODING PROJECTS -->
+                <div class="row" id="code-row3">
+                        <!-- START COL 1 -->
+                        <div class="col" id="row1-col1">
+                            <!-- Trigger/Open The Modal -->
+                            <div class="text-center">
+                                <button id="myBtn5">
+                                    <img src="./img/arithmetic-app/Welcome-final@3x.png" alt="" width="215" height="400">
+                                </button>
+                                <p class="para-bold" id="new-project-title">Math It!</p>
+                            </div>
+                    
+                            <!-- The Modal -->
+                            <div id="myModal5" class="modal">
+                    
+                                <!-- Modal content -->
+                                <div class="modal-content5">
+                                    <span class="close5">&times;</span>
+                                    <h4 class="text-center" id="porsche-title">Math It!</h4>
+                                    <p class="para-bold" id="style-work">Type of Work: Mobile Development (iOS)</p>
+                                    <p class="para-bold">Number of Hours: 3 hours</p>
+                                    <p class="para-bold">Software Used:
+                                        <img src=" ./img/photoshop.dms" alt="" width="34" height="33" id="photoshop-icon">
+                                        <img src="./img/illustrator.png" alt="" width="31" height="30" id="illustrator-icon">
+                                        <img src="./img/adobeXD.png" alt="" width="31" height="30" id="xd-icon">
+                                        <img src="./img/xcode.png" alt="" width="33" height="32" id="xcode-icon">
+                                    </p>
+                                    <p class="para-bold">Languages: Swift</p>
+                                    <p class="para-bold" id="github-link">Github Repository:
+                                        <!-- UPLOAD THIS PROJECT OT GITHUB!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+                                        <a href="  ">
+                                            <i class="fab fa-github" id="github-repo"></i>
+                                        </a>
+                                    </p>
+                                    <p class="para">
+                                        Math It was an application created during the 2020 quarintine. I got really bored and wanted
+                                        to get back into mobile development. There isn't anything special about this project. It's a
+                                        very simple application that's pretty much a calculator with some cool UI/UX.
+                                    </p>
+                                    <p class="para">
+                                        Here's what the application looks like:
+                                    </p>
+
+                                    <div class="row">
+                                            <div class="col">
+                                                <img src="./img/arithmetic-app/Welcome-final@3x.png" alt="" width="200" height="400">
+                                            </div>
+                                            <div class="col">
+                                                <img src="./img/arithmetic-app/Addition-final@3x.png" alt="" width="200" height="400">
+                                            </div>
+                                            <div class="col">
+                                                <img src="./img/arithmetic-app/Subtraction-final@3x.png" alt="" width="200" height="400">
+                                            </div>
+                                            <div class="col">
+                                                <img src="./img/arithmetic-app/Multiplication-final@3x.png" alt="" width="200" height="400">
+                                            </div>
+                                            <div class="col">
+                                                <img src="./img/arithmetic-app/Division-final@3x.png" alt="" width="200" height="400">
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                                <div class="col text-center" id="priv-video">
+                                                    <p class="para-bold" id="video-para">
+                                                        Here's a video of what this app looks like in action!
+                                                    </p>
+                                                </div>
+                                                <div class="col text-center">
+                                                    <video src="" width="200" height="400"></video>
+                                                </div>
+                                        </div>
+                                    
+                    
+                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END COL 1 -->
+                    
+                        <!-- START COL 2 -->
+                        <div class="col" id="row1-col1">
+                                <!-- Trigger/Open The Modal -->
+                                <div class="text-center">
+                                    <button id="myBtn6">
+                                        <img src="./img/ml-model-01.png" alt="" width="400" height="400">
+                                    </button>
+                                    <p class="para-bold" id="new-project-title">ML Model Training</p>
+                                </div>
+                        
+                                <!-- The Modal -->
+                                <div id="myModal6" class="modal">
+                        
+                                    <!-- Modal content -->
+                                    <div class="modal-content6">
+                                        <span class="close6">&times;</span>
+                                        <h4 class="text-center" id="porsche-title">ML Model Training</h4>
+                                        <p class="para-bold" id="style-work">Type of Work: Machine Learning</p>
+                                        <p class="para-bold">Number of Hours: 2+ hours</p>
+                                        <p class="para-bold">Software Used:
+                                                <img src="./img/tensorflow-icon.png" alt="" width="33" height="32" id="tensorflow-icon">
+                                            <img src="./img/visual-code.png" alt="" width="33" height="32" id="visual-code">
+                                        </p>
+                                        <p class="para-bold">Languages: Python</p>
+                                        <p class="para-bold" id="github-link">Github Repository:
+                                            <!-- CREATE GITHUB REPO FOR THIS PLEASE!!!!!!!!!!!!!!!!!!!-->
+                                            <a href="">
+                                                <i class="fab fa-github" id="github-repo"></i>
+                                            </a>
+                                        </p>
+                                        <p class="para">
+                                            I'm currently working on this project and by starting I began looking into neural
+                                            networks and how to create your own using Tensorflow. 
+                                        </p>
+                                        <p class="para">
+                                            This section will be updated.
+                                        </p>
+                                        
+                        
+                        
+                                        
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- END COL 2 -->
+                    
+                </div>
+                <!-- END THIRD ROW CODING PROJECTS -->
+
+                <!-- START FOURTH ROW CODING PROJECTS -->
+                <div class="row" id="code-row4">
+                        <!-- START COL 1 -->
+                        <div class="col" id="row1-col1">
+                            <!-- Trigger/Open The Modal -->
+                            <div class="text-center">
+                                <button id="myBtn7">
+                                    <img src="./img/RaceIt/R1.jpg" alt="" height="370" width="370">
+                                </button>
+                                <p class="para-bold" id="new-project-title">RaceIt</p>
+                            </div>
+                    
+                            <!-- The Modal -->
+                            <div id="myModal7" class="modal">
+                    
+                                <!-- Modal content -->
+                                <div class="modal-content7">
+                                    <span class="close7">&times;</span>
+                                    <h4 class="text-center" id="porsche-title">RaceIt</h4>
+                                    <p class="para-bold" id="style-work">Type of Work: Game Development</p>
+                                    <p class="para-bold">Number of Hours: 20+ hours</p>
+                                    <p class="para-bold">Software Used:
+                                        <img src="./img/photoshop.dms" alt="" width="31" height="30" id="photoshop-icon">
+                                        <img src="./img/illustrator.png" alt="" width="31" height="30" id="illustrator-icon">
+                                        <img src="./img/netbeans-icon.png" alt="" width="33" height="32" id="netbeans-icon">
+                                    </p>
+                                    <p class="para-bold">Languages: Java</p>
+                                    <p class="para-bold" id="github-link">Github Repository:
+                                        <a href="https://github.com/denisltatar/Team-TWR-4UI-Summative">
+                                            <i class="fab fa-github" id="github-repo"></i>
+                                        </a>
+                                    </p>
+                                    <p class="para">
+                                            RaceIt was a highschool project that was created
+                                            as a summative for my grade 12 computer science course (June, 2018). 
+                                            I developed this two player racing
+                                            game which features two tracks
+                                            along with the choice of four 
+                                            different cars. Split screen, pause,
+                                            car boost, lap count are all features
+                                            implemented into the game and 
+                                            in-game physics are applied using
+                                            libGDX game development 
+                                            freamwork. Each track features
+                                            grassy or sandy areas that reduces car
+                                            speed by 60%. Each track also 
+                                            features its own checkpoints
+                                            players must cross to complete
+                                            a lap. 
+                                    </p>
+                                    <p class="para">
+                                        Here's what the application looks like:
+                                    </p>
+
+                                    <!-- Pictures of Gameplay-->
+                                    <div class="row" id="games-row">
+                                            <div class="col">
+                                                <img src="./img/RaceIt/R1.jpg" alt="" width="370" height="370">
+                                            </div>
+                                            <div class="col">
+                                                    <img src="./img/RaceIt/R2.jpg" alt="" width="370" height="370">
+                                            </div>
+                                            <div class="col">
+                                                    <img src="./img/RaceIt/R3.jpg" alt="" width="370" height="370">
+                                            </div>
+                                        </div>
+                                        <div class="row" id="games-row">
+                                                <div class="col">
+                                                    <img src="./img/RaceIt/R4.jpg" alt="" width="370" height="370">
+                                                </div>
+                                                <div class="col">
+                                                        <img src="./img/RaceIt/R5.jpg" alt="" width="370" height="370">
+                                                </div>
+                                                <div class="col">
+                                                        <img src="./img/RaceIt/R6.jpg" alt="" width="370" height="370">
+                                                </div>
+                                        </div>
+                                        <div class="row" id="games-row">
+                                                <div class="col">
+                                                    <img src="./img/RaceIt/R7.jpg" alt="" width="370" height="370">
+                                                </div>
+                                                <div class="col">
+                                                        <img src="./img/RaceIt/R9.jpg" alt="" width="370" height="370">
+                                                </div>
+                                                <div class="col">
+                                                        <img src="./img/RaceIt/R10.jpg" alt="" width="370" height="370">
+                                                </div>
+                                        </div>
+                                        <div class="row text-center" id="games-last2-row">
+                                                <div class="col">
+                                                    <img src="./img/RaceIt/R11.jpg" alt="" width="370" height="370">
+                                                </div>
+                                                <div class="col">
+                                                        <img src="./img/RaceIt/R12.jpg" alt="" width="370" height="370">
+                                                </div>
+                                                
+                                        </div>
+
+
+                                        <!-- Video -->
+                                        <p class="para">Here's a video of some gameplay:</p>
+                                        <div class="row text-center" id="general-row">
+                                            <div class="col text-center" id="video-style">
+                                                <iframe width="860" height="615"  src="https://www.youtube.com/embed/jk8Ki6v2pvM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    
+                    
+                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END COL 1 -->
+                    
+                        <!-- START COL 2 -->
+                        <div class="col" id="row1-col1">
+                                <!-- Trigger/Open The Modal -->
+                                <div class="text-center">
+                                    <button id="myBtn8">
+                                        <img src="./img/Minion Run/M1.jpg" alt="" height="370" width="370">
+                                    </button>
+                                    <p class="para-bold" id="new-project-title">Minion Run</p>
+                                </div>
+                        
+                                <!-- The Modal -->
+                                <div id="myModal8" class="modal">
+                        
+                                    <!-- Modal content -->
+                                    <div class="modal-content8">
+                                        <span class="close8">&times;</span>
+                                        <h4 class="text-center" id="porsche-title">Minion Run</h4>
+                                        <p class="para-bold" id="style-work">Type of Work: Game Development</p>
+                                        <p class="para-bold">Number of Hours: 15+ hours</p>
+                                        <p class="para-bold">Software Used:
+                                            <img src="./img/photoshop.dms" alt="" width="31" height="30" id="photoshop-icon">
+                                            <img src="./img/illustrator.png" alt="" width="31" height="30" id="illustrator-icon">
+                                            <img src="./img/netbeans-icon.png" alt="" width="33" height="32" id="netbeans-icon">
+                                        </p>
+                                        <p class="para-bold">Languages: Java</p>
+                                        <p class="para-bold" id="github-link">Github Repository:
+                                            <a href="https://github.com/denisltatar/Summative">
+                                                <i class="fab fa-github" id="github-repo"></i>
+                                            </a>
+                                        </p>
+                                        <p class="para">
+                                            Minion Run is also a highschool project that I created for my 
+                                            summative in my grade 11 computer science class. I created all the
+                                            designs that you see below using Illustrator and Photoshop. 
+                                        </p>
+                                        
+
+                                        <!-- Pictures of Gameplay-->
+                                    <div class="row" id="games-row">
+                                            <div class="col">
+                                                <img src="./img/Minion Run/M1.jpg" alt="" width="370" height="370">
+                                            </div>
+                                            <div class="col">
+                                                    <img src="./img/Minion Run/M2.jpg" alt="" width="370" height="370">
+                                            </div>
+                                            <div class="col">
+                                                <img src="./img/Minion Run/M3.jpg" alt="" width="370" height="370">
+                                            </div>
+                                        </div>
+                                        <div class="row" id="games-row">
+                                                <div class="col">
+                                                    <img src="./img/Minion Run/M7.jpg" alt="" width="370" height="370">
+                                                </div>
+                                                <div class="col">
+                                                    <img src="./img/Minion Run/M4.jpg" alt="" width="370" height="370">
+                                                </div>
+                                                <div class="col">
+                                                    <img src="./img/Minion Run/M5.jpg" alt="" width="370" height="370">
+                                                </div>
+                                        </div>
+                                        <div class="row text-center" id="games-row">
+                                                <div class="col">
+                                                    <img src="./img/Minion Run/M6.jpg" alt="" width="370" height="370">
+                                                </div>
+                                        </div>
+                                        
+
+
+                                        <!-- Video -->
+                                        <p class="para">Here's a video of some gameplay:</p>
+                                        <div class="row text-center" id="general-row">
+                                            <div class="col text-center" id="video-style">
+                                                <iframe width="860" height="615"  src="https://www.youtube.com/embed/gpTM1DUupaY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                        
+                        
+                        
+                                        
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- END COL 2 -->
+                    
+                </div>
+                <!-- END FOURTH ROW CODING PROJECTS -->
+
+
+
+            </div>
+            </div>
+        </section>
+        <!-- ========== END Coding Projects ========== -->
+
+        <!-- ========== START Design Projects ========== -->
+        <section class="design-projects" id="design-projects">
+        <div class="container" id="project-container">
+            <div class="project-title pb-5 text-center">
+                <h1 class="text-uppercase title-h1" id="project-title">Design Projects</h1>
+            </div>
+
+
+            <!-- START FIRST ROW OF DESIGNS (known as btn 6 and 7)-->
+            <div class="row" id="row1">
+                    <div class="col" id="row1-col1">
+                            <!-- Trigger/Open The Modal -->
+                            <div class="text-center">
+                                <button id="myBtnd6">
+                                    <img src="./img/strange-fruits-1.jpg" alt="" width="370" height="370">
+                                </button>
+                                <p class="para-bold" id="new-project-title">Strange Fruits Cover Art</p>
+                            </div>
+                            <!-- The Modal -->
+                            <div id="myModald6" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-contentd6">
+                                    <span class="closed6">&times;</span>
+                                    <h4 class="text-center" id="porsche-title">Strange Fruits Cover Art</h4>
+                                    <p class="para-bold" id="style-work">Type of Work: Graphic Design</p>
+                                    <p class="para-bold">Number of Hours: < 2 hour</p> <p class="para-bold">Software Used:
+                                            <img src="./img/photoshop.dms" alt="" width="34" height="33" id="photoshop-icon">
+                                            <img src="./img/illustrator.png" alt="" width="34" height="33" id="illustrator-icon">
+                                    </p>
+                                    <p class="para">
+                                        This piece was created for the record label called "Strange Fruits" back in May 2018.
+                                        Steve Void, the owner of the record label reached out to me through Instagram and 
+                                        the rest was history. I got the chance to work on two pieces for Steve, this being the first piece. For more
+                                        details about Steve click
+                                        <a href="https://www.insomniac.com/music/artists/steve-void/">here.</a>
+                                        If you want to read more about his record label, click 
+                                        <a href="https://strangefruits.net/">here.</a>
+                                        
+                                    </p>
+                                    <p class="para">
+                                        Here's another look:
+                                    </p>
+                
+                                    <div class="row">
+                                        <div class="col text-center">
+                                            <img src="./img/strange-fruits-1.jpg" alt="" width="580" height="580">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                <div class="col" id="row1-col1">
+                    <!-- Trigger/Open The Modal -->
+                    <div class="text-center">
+                        <button id="myBtnd7">
+                            <img src="./img/strange-fruits-2.jpg" alt="" width="370" height="370">
+                        </button>
+                        <p class="para-bold" id="new-project-title">Strange Fruits Cover Art #2</p>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="myModald7" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-contentd7">
+                                <span class="closed7">&times;</span>
+                                <h4 class="text-center" id="porsche-title">Strange Fruits Cover Art #2</h4>
+                                <p class="para-bold" id="style-work">Type of Work: Graphic Design</p>
+                                <p class="para-bold">Number of Hours: < 2 hour</p> <p class="para-bold">Software Used:
+                                        <img src="./img/photoshop.dms" alt="" width="34" height="33" id="photoshop-icon">
+                                        <img src="./img/illustrator.png" alt="" width="34" height="33" id="illustrator-icon">
+                                </p>
+                                <p class="para">
+                                    This piece was created for the record label called "Strange Fruits" back in May 2018.
+                                    Steve Void, the owner of the record label reached out to me through Instagram and 
+                                    the rest was history. I got the chance to work on two pieces for Steve, this being the second piece. For more
+                                    details about Steve click
+                                    <a href="https://www.insomniac.com/music/artists/steve-void/">here.</a>
+                                    If you want to read more about his record label, click 
+                                    <a href="https://strangefruits.net/">here.</a>
+                                    
+                                </p>
+                                <p class="para">
+                                    Here's another look:
+                                </p>
+            
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <img src="./img/strange-fruits-2.jpg" alt="" width="580" height="580">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <!-- END FIRST ROW OF DESIGNS -->
+        
+            <!-- START SECOND ROW OF DESIGNS -->
+            <div class="row" id="row1">
+                <div class="col" id="row1-col1">
+                    <!-- Trigger/Open The Modal -->
+                    <div class="text-center">
+                        <button id="myBtnd1">
+                            <img src="./img/dream-big.PNG" alt="" width="321" height="460">
+                        </button>
+                        <p class="para-bold" id="new-project-title">Dream Big</p>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="myModald1" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-contentd1">
+                            <span class="closed1">&times;</span>
+                            <h4 class="text-center" id="porsche-title">Dream Big</h4>
+                            <p class="para-bold" id="style-work">Type of Work: Graphic Design</p>
+                            <p class="para-bold">Number of Hours: < 1 hour</p> <p class="para-bold">Software Used:
+                                    <img src="./img/procreate.png" alt="" width="34" height="33" id="procreate-icon">
+                            </p>
+                            <p class="para">
+                                Dream Big is an artwork piece I made specifically to fit Ipad screens. It's a wallpaper
+                                I created in August 2019. I created this piece on my Ipad during a 21 hour road trip and felt pretty good about it
+                                along with a massive headache as I get car sick very easily. 
+                            </p>
+                            <p class="para">
+                                Here's another look:
+                            </p>
+        
+                            <div class="row">
+                                <div class="col text-center">
+                                    <img src="./img/dream-big.PNG" alt="" width="600" height="900">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col" id="row1-col1">
+                    <!-- Trigger/Open The Modal -->
+                    <div class="text-center">
+                        <button id="myBtnd2">
+                            <img src="./img/kaws.PNG" alt="" width="321" height="460">
+                        </button>
+                        <p class="para-bold" id="new-project-title">Dior X Kaws</p>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="myModald2" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-contentd2">
+                            <span class="closed2">&times;</span>
+                            <h4 class="text-center" id="porsche-title">Dior X Kaws</h4>
+                            <p class="para-bold" id="style-work">Type of Work: Graphic Design</p>
+                            <p class="para-bold">Number of Hours: < 1 hour</p> <p class="para-bold">Software Used:
+                                    <img src="./img/procreate.png" alt="" width="34" height="33" id="procreate-icon">
+                            </p>
+                            <p class="para">
+                                Dior X Kaws is an artwork piece I made specifically to fit Ipad screens. It's a wallpaper
+                                I created in September 2019. This piece was inspired by Kaws, better known as Brian
+                                Donnelly who is an artist and designer.
+                                I liked his work for a while and always wanted to create something similar to his
+                                style. Click
+                                <a href="https://en.wikipedia.org/wiki/Kaws">here</a>
+                                to read more on Brian. Click 
+                                <a href="https://kawsone.com/password">here</a>
+                                to view his website.
+                            </p>
+                            <p class="para">
+                                Here's another look:
+                            </p>
+        
+                            <div class="row">
+                                <div class="col text-center">
+                                    <img src="./img/kaws.PNG" alt="" width="600" height="900">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END SECOND ROW OF DESIGNS -->
+        
+            <!-- START THIRD ROW OF DESIGNS -->
+            <div class="row" id="row1">
+                <div class="col" id="row1-col1">
+                    <!-- Trigger/Open The Modal -->
+                    <div class="text-center">
+                        <button id="myBtnd3">
+                            <img src="./img/gucci.PNG" alt="" width="321" height="460">
+                        </button>
+                        <p class="para-bold" id="new-project-title">Gucci</p>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="myModald3" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-contentd3">
+                            <span class="closed3">&times;</span>
+                            <h4 class="text-center" id="porsche-title">Gucci</h4>
+                            <p class="para-bold" id="style-work">Type of Work: Graphic Design</p>
+                            <p class="para-bold">Number of Hours: < 1 hour</p> <p class="para-bold">Software Used:
+                                    <img src="./img/procreate.png" alt="" width="34" height="33" id="procreate-icon">
+                            </p>
+                            <p class="para">
+                                Gucci is an artwork piece I made specifically to fit Ipad screens. It's a wallpaper
+                                I created in July 2019. I created this piece in one of my classes during my spring term at
+                                University of Waterloo. I'll be honest, the class was very boring so I decided to make another
+                                wallpaper.
+                            </p>
+                            <p class="para">
+                                Here's another look:
+                            </p>
+            
+                            <div class="row">
+                                <div class="col text-center">
+                                    <img src="./img/gucci.PNG" alt="" width="600" height="900">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="row" id="row1">
+                    <div class="col" id="row1-col1">
+                        <!-- Trigger/Open The Modal -->
+                        <div class="text-center">
+                            <button id="myBtnd4">
+                                <img src="./img/Avu Design/Actual Black Front Design 3.png" alt="" width="420" height="460">
+                            </button>
+                            <p class="para-bold" id="new-project-title">Avu Clothing</p>
+                        </div>
+                        <!-- The Modal -->
+                        <div id="myModald4" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-contentd4">
+                                <span class="closed4">&times;</span>
+                                <h4 class="text-center" id="porsche-title">Avu Clothing</h4>
+                                <p class="para-bold" id="style-work">Type of Work: Graphic Design</p>
+                                <p class="para-bold">Number of Hours: 30+ hours</p>
+                                <p class="para-bold">Software Used:
+                                    <img src=" ./img/photoshop.dms" alt="" width="34" height="33" id="photoshop-icon">
+                                    <img src="./img/illustrator.png" alt="" width="31" height="30" id="illustrator-icon">
+                                    <img src="./img/procreate.png" alt="" width="34" height="33" id="procreate-icon">
+                                </p>
+                                <p class="para-bold" id="github-link">Instagram:
+                                    <a href="https://www.instagram.com/avuclothing/">
+                                        <i class="fab fa-instagram" id="instagram-icon"></i>
+                                    </a>
+                                </p>
+                                <p class="para-bold" id="github-link">Youtube:
+                                    <a href="https://www.youtube.com/channel/UC4aog_02uHsTtcTMDk9jgmA">
+                                        <i class="fab fa-youtube" id="youtube-icon"></i>
+                                    </a>
+                                </p>
+                                <p class="para">
+                                    Avu Clothing is a streetwear brand I started in the summer of 2017 with one of my
+                                    close friends, Nihal Grewal. We sold over 150+ t-shirts
+                                    and 100+ hoodies. The design of this brand was inspired by other brands such as
+                                    Supreme, Bathing Ape, and Kith. I no longer run this brand as I've stepped down since
+                                    January 2020
+                                    to focus on school and my career in software engineering/development.
+                                </p>
+                                <p class="para">
+                                    Here's another look at some of the designs I created (also note that the images
+                                    below were shot and edited by me):
+                                </p>
+            
+                                <!-- First Collection of Clothes -->
+                                <p class="para">First collection:</p>
+                                <div class="row text-center" id="general-row">
+                                    <div class="col">
+                                        <img src="./img/Avu Design/First Post.jpg" alt="" id="first-post">
+                                    </div>
+                                </div>
+            
+                                <!-- Plaster Look Logos/Designs -->
+                                <p class="para">Floral Designs:</p>
+                                <div class="row" id="general-row">
+                                    <div class="col text-center" id="logo-left">
+                                        <img src="./img/Avu Design/new sleeve with text.png" alt="" width="509" height="300">
+                                    </div>
+                                    <div class="col text-center" id="logo-right">
+                                        <img src="./img/Avu Design/new sleeve.png" alt="" width="430" height="300">
+                                    </div>
+                                </div>
+            
+                                <!-- New Summer T-shirts -->
+                                <p class="para">2020 Summer T-shirts:</p>
+                                <div class="row" id="general-row">
+                                    <div class="col text-center" id="summer-t-col1">
+                                        <img src="./img/Avu Design/front black" alt="" width="600" height="470">
+                                    </div>
+                                    <div class="col text-center" id="summer-t-col2">
+                                        <img src="./img/Avu Design/front white" alt="" width="600" height="470">
+                                    </div>
+                                </div>
+            
+                                <div class="row" id="general-row">
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design/back black" alt="" width="600" height="470">
+                                    </div>
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design/back white" alt="" width="600" height="470">
+                                    </div>
+                                </div>
+            
+                                <!-- Hoodies -->
+                                <p class="para">Released Hoodies:</p>
+                                <div class="row" id="general-row">
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design/Actual Black Front Design 3.png" alt="" width="500" height="470">
+                                    </div>
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design/Actual White Front Design 3.png" alt="" width="500" height="470">
+                                    </div>
+                                </div>
+            
+                                <!-- Hoodie Prototypes-->
+                                <p class="para">Prototype Hoodies (never released):</p>
+                                <div class="row" id="general-row">
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design/Prototypes/Front Black .png" alt="" width="500" height="470">
+                                    </div>
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design//Prototypes/Front White .png" alt="" width="500" height="470">
+                                    </div>
+                                </div>
+                                <div class="row" id="general-row">
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design/Prototypes/Back Black .png" alt="" width="500" height="470">
+                                    </div>
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design//Prototypes/Back White.png" alt="" width="500" height="470">
+                                    </div>
+                                </div>
+            
+                                <!-- First Photoshoot -->
+                                <p class="para">First Collection Photoshoot:</p>
+                                <div class="row" id="general-row">
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design/Photoshoot Pictures/First Shoot/IMG_5468-1.jpg" alt=""
+                                            width="400" height="600">
+                                    </div>
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design/Photoshoot Pictures/First Shoot/IMG_5487-1.jpg" alt=""
+                                            width="400" height="600">
+                                    </div>
+                                </div>
+                                <div class="row" id="general-row">
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design/Photoshoot Pictures/First Shoot/IMG_5511-1.jpg" alt=""
+                                            width="400" height="600">
+                                    </div>
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design/Photoshoot Pictures/First Shoot/IMG_5533-1.jpg" alt=""
+                                            width="400" height="600">
+                                    </div>
+                                </div>
+                                <div class="row" id="general-row">
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design/Photoshoot Pictures/First Shoot/IMG_5619-1.jpg" alt=""
+                                            width="400" height="600">
+                                    </div>
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design/Photoshoot Pictures/First Shoot/IMG_5691-1.jpg" alt=""
+                                            width="400" height="600">
+                                    </div>
+                                </div>
+                                <div class="row" id="general-row">
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design/Photoshoot Pictures/First Shoot/IMG_5647-1.jpg" alt=""
+                                            width="400" height="600">
+                                    </div>
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design/Photoshoot Pictures/First Shoot/IMG_5669-1.jpg" alt=""
+                                            width="400" height="600">
+                                    </div>
+                                </div>
+            
+            
+            
+            
+                                <!-- Atlanta Pics -->
+                                <p class="para">Atlanta Photoshoot:</p>
+                                <div class="row" id="general-row">
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design/Photoshoot Pictures/IMG_2070.jpg" alt="" width="400"
+                                            height="600">
+                                    </div>
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design/Photoshoot Pictures/IMG_2103-2.jpg" alt="" width="400"
+                                            height="600">
+                                    </div>
+                                </div>
+                                <div class="row" id="general-row">
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design/Photoshoot Pictures/IMG_2076-2.jpg" alt="" width="400"
+                                            height="600">
+                                    </div>
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design/Photoshoot Pictures/IMG_2098.jpg" alt="" width="400"
+                                            height="600">
+                                    </div>
+                                </div>
+                                <div class="row" id="general-row">
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design/Photoshoot Pictures/IMG_2158.jpg" alt="" width="400"
+                                            height="600">
+                                    </div>
+                                    <div class="col text-center">
+                                        <img src="./img/Avu Design/Photoshoot Pictures/IMG_2167.jpg" alt="" width="400"
+                                            height="600">
+                                    </div>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END THIRD ROW OF DESIGNS -->
+
+            <!-- START FOURTH ROW OF DESIGNS -->
+            <div class="row" id="row1">
+                <div class="col" id="row1-col1">
+                    <!-- Trigger/Open The Modal -->
+                    <div class="text-center">
+                        <button id="myBtnd5">
+                            <img src="./img/Sunset@4x-100.jpg" alt="" width="380" height="380">
+                        </button>
+                        <p class="para-bold" id="new-project-title">Sunset Illustration</p>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="myModald5" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-contentd5">
+                            <span class="closed5">&times;</span>
+                            <h4 class="text-center" id="porsche-title">Sunset Illustration</h4>
+                            <p class="para-bold" id="style-work">Type of Work: Graphic Design</p>
+                            <p class="para-bold">Number of Hours: < 1 hour</p> <p class="para-bold">Software Used:
+                                    <img src="./img/illustrator.png" alt="" width="34" height="33" id="illustrator-icon">
+                                    <img src="./img/photoshop.dms" alt="" width="34" height="33" id="photoshop-icon">
+                            </p>
+                            <p class="para">
+                                This sunset illustration was created during a trip to Florida back in May 2019. 
+                            </p>
+                            <p class="para">
+                                Here's another look:
+                            </p>
+        
+                            <div class="row">
+                                <div class="col text-center">
+                                    <img src="./img/Sunset@4x-100.jpg" alt="" width="700" height="700">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="col" id="row1-col1">
+                    <!-- Trigger/Open The Modal -->
+                    <div class="text-center">
+                        <button id="myBtnd9">
+                            <img src="./img/Chief-Wolf-Clothing/Black Wolf Logo.png" alt="" width="390" height="370">
+                        </button>
+                        <p class="para-bold" id="new-project-title">Chief Wolf Clothing</p>
+                    </div>
+                    <!-- The Modal -->
+                    <div id="myModald9" class="modal">
+                            <!-- Modal content -->
+                            <div class="modal-contentd9">
+                                <span class="closed9">&times;</span>
+                                <h4 class="text-center" id="porsche-title">Chief Wolf Clothing</h4>
+                                <p class="para-bold" id="style-work">Type of Work: Graphic Design</p>
+                                <p class="para-bold">Number of Hours: < 4 hour</p> <p class="para-bold">Software Used:
+                                        <img src="./img/photoshop.dms" alt="" width="34" height="33" id="photoshop-icon">
+                                        <img src="./img/illustrator.png" alt="" width="34" height="33" id="illustrator-icon">
+                                </p>
+                                <p class="para">
+                                    Chief Wolf Clothing is a brand based in Naples, Florida. The folks at Chief Wolf reached 
+                                    out to me and asked if I could create their logo for them. This is what I came up with.
+                                </p>
+                                <p class="para">
+                                    Here's a look at their logo:
+                                </p>
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <img src="./img/Chief-Wolf-Clothing/Black Wolf Logo.png" alt="" width="580" height="580">
+                                    </div>
+                                </div>
+
+                                <p class="para">
+                                    Here's another version:
+                                </p>
+                                <div class="row">
+                                    <div class="col text-center">
+                                        <img src="./img/Chief-Wolf-Clothing/Black T Shirt Design-01.png" alt="" width="800" height="430">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+
+                
+                <!-- EXTRA!! ADD ANOTHER PROJECT HERE -->
+                
+            <!-- END FOURTH ROW OF DESIGNS -->
+
+
+            
+
+
+            <!-- START FIFTH ROW OF DESIGNS -->
+            <!-- END FIFTH ROW OF DESIGNS -->
+
+
+
+
+        </section>
+        <!-- ========== END Design Projects ========== -->
+        <!-- ============================= End Projects Area ============================= -->
+    </main>
+    <!-- ========================================== End Main Area ========================================== -->
+
+    <!-- ============================= Start Contact Me ============================= -->
+    <section class="contact-form-edit" id="contact-me">
+        <div class="container-fluid">
+                <div class="project-title pb-5 text-center">
+                    <h1 class="text-uppercase title-h1" id="project-title">Contact Me</h1>
+                </div>
+                <!-- 
+                <form class="contact-form" id="contact-form" action="contact.php" method="post">
+                <p id="contact-text">Dear Denis,</p>
+                <br> </br>
+                <br> </br>
+                <br> </br>
+                <br> </br>
+                <p id="contact-text">My
+                    <label for="your-name">name</label> is
+                    <input id="button-text" name="name" type="text" class="feedback-input" minlength="3" placeholder="(your name here)" required> and</p>
+
+                <br> </br>
+                <br> </br>
+                <br> </br>
+                <p id="contact-text">my
+                    <label for="email">email address</label> is
+                    <input id="button-text" name="mail" type="text" class="feedback-input" placeholder="(your email address)" required>
+                </p>
+                <br> </br>
+                <br> </br>
+                <br> </br>
+                <br> </br>
+                <br> </br>
+                <br> </br>
+                <br> </br>
+                <p id="contact-text"> I have a
+                    <label for="your-message">message</label> for you,</p>
+
+                <p id="contact-text">
+                    <!-- <textarea id="button-text" name="message" class="feedback-input" placeholder="(your msg here)" required></textarea> 
+                    <textarea name="your-message" id="your-message" placeholder="(your msg here)" class="expanding" required></textarea>
+                </p>
+                <p>
+                    <button type="submit" id="send-button" class="send-button" style="background: none; border: none; outline: none; margin: 2vmax;">
+                    <svg version="1.1" class="send-icn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="36px" viewBox="0 0 100 36" enable-background="new 0 0 100 36" xml:space="preserve">
+                        <path d="M100,0L100,0 M23.8,7.1L100,0L40.9,36l-4.7-7.5L22,34.8l-4-11L0,30.5L16.4,8.7l5.4,15L23,7L23.8,7.1z M16.8,20.4l-1.5-4.3
+                    l-5.1,6.7L16.8,20.4z M34.4,25.4l-8.1-13.1L25,29.6L34.4,25.4z M35.2,13.2l8.1,13.1L70,9.9L35.2,13.2z" />
+                    </svg>
+                    <br> </br>
+                    <br> </br>
+                    <br> </br>
+                    <br> </br>
+                    <small>send</small>
+                    </button>
+                </p>
+                </form> -->
+
+
+
+
+                <!-- NEW FORM -->
+            
+                <!-- Adding a usesless comment!-->
+                <!-- Cry for help -->
+            <form class="new-form" id="contact-form" action="contact.php">
+                <p class="contact-text">Dear Denis,</p>
+                <p class="contact-text">My
+                    <label for="your-name">name</label> is
+                    <input id="button-text" name="name" type="text" class="feedback-input" minlength="3" placeholder="(your name here)" required> and
+                </p>
+            
+                <p class="contact-text">my
+                    <label for="email">email address</label> is
+                    <input id="button-text" name="mail" type="text" class="feedback-input" placeholder="(your email address)" required>
+                </p>
+            
+                <p class="contact-text"> I have a
+                    <label for="your-message">message</label> for you,</p>
+            
+                <p class="contact-text">
+                    <textarea id="button-text" name="message" class="feedback-input expanding"  placeholder="(your message here)"
+                        required></textarea>
+                </p>
+                <p class="contact-text">
+                    <button id="submit-text" name="submit" type="submit" value="Send">
+                        <svg version="1.1" class="send-icn" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="36px"
+                            viewBox="0 0 100 36" enable-background="new 0 0 100 36" xml:space="preserve">
+                            <path d="M100,0L100,0 M23.8,7.1L100,0L40.9,36l-4.7-7.5L22,34.8l-4-11L0,30.5L16.4,8.7l5.4,15L23,7L23.8,7.1z M16.8,20.4l-1.5-4.3
+                            l-5.1,6.7L16.8,20.4z M34.4,25.4l-8.1-13.1L25,29.6L34.4,25.4z M35.2,13.2l8.1,13.1L70,9.9L35.2,13.2z" />
+                        </svg>
+                        <small>send</small>
+                    </button>
+                </p>
+            </form>
+            
+
+
+        </div>
+    </section>
+
+    <!-- ============================= End Contact Me ============================= -->
+
+
+    <!-- ============================= Start Footer Area ============================= -->
+    <footer class="footer-area" id="contact-me">
+        <div class="container">
+            <div class="">
+                <div class="site-logo text-center py-4">
+                    <!-- Logo -->
+                </div>
+                <div class="social text-center">
+                    <h5 class="text-uppercase">Let's get in touch</h5>
+                    <a href="https://github.com/denisltatar"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/denisltatar/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="copyrights text-center">
+                    <p class="para">
+                        Copyright ©2020 All rights reserved | This website was created by
+                        <a href="#"><span style="color: var(--primary-color);">Denis Tatar</span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ============================= End Footer Area ============================= -->
+</body>
+
+<!-- Moved from the bottom -->
+<!-- Jquery js file -->
+<script src="./js/jquery.3.4.1.js"></script>
+
+<!-- Bootstrap js file -->
+<script src="./js/bootstrap.min.js"></script>
+
+<!-- Isotop js library -->
+<script src="./vendor/isotope/isotope.min.js"></script>
+
+<!-- Custome js file -->
+<script src="./js/main.js"></script>
+
+</html>

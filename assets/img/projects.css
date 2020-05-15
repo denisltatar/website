@@ -1,0 +1,179 @@
+
+	html {
+        color: black;
+    }
+ 
+    .navbar {
+			font-size: 20px;
+			font-family: DIN Condensed;		
+			margin-bottom: 0;
+			border-radius: 0;
+			background-color:  transparent;
+			padding: 1% 0;
+      border: 0;
+    }
+ /*
+		.navbar-inverse .navbar-nav .home a {
+			color: rgb(255, 72, 72);
+			background-color:  transparent;
+    }
+    */
+    
+    .navbar-inverse .navbar-nav .home a:focus, .navbar-inverse .navbar-nav .about a:focus, .navbar-inverse .navbar-nav .projects a:focus,
+    .navbar-inverse .navbar-nav .resume a:focus, .navbar-inverse .navbar-nav .contact a:focus {
+      color: rgb(255, 72, 72);
+      background-color: transparent;
+    }
+
+    .navbar-inverse .navbar-nav .home a:hover {
+      color: rgb(252, 141, 141);
+      background-color: transparent;
+    }
+
+    .navbar-inverse .navbar-nav .about a:hover, .navbar-inverse .navbar-nav .projects a:hover,
+    .navbar-inverse .navbar-nav .resume a:hover, .navbar-inverse .navbar-nav .contact a:hover {
+      color: rgb(252, 141, 141);
+      background-color: transparent;
+    }
+
+    .nav navbar-nav navbar-right {
+      padding-right: 10px;
+    }
+
+    .nav navbar-nav navbar-right li:hover {
+      color: grey;
+    }
+
+     .project-1-section {
+        height: 100vh;
+      }
+
+    .project-1 img { 
+        width: 96%;
+        margin: 3px auto;
+        display: block;
+        padding-left: 22px;
+        padding-right: 15px;
+        z-index: 0;
+     }
+
+    .project-1 video {
+      position: absolute;
+      right: 220px;
+      top: 530px;
+      border: 6px solid rgb(209, 209, 209);
+    }
+
+    .project-2-section {
+        height: 100vh;
+        /* background: rgb(0, 68, 255); */
+      }
+      
+      .project-2 img { 
+      width: 98%;
+      margin: 3px auto;
+      display: block;
+      padding-top: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+      z-index: 0;
+      }
+
+      .project-2 video {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        right: 240px;
+        top: 1415px;
+        border: 6px solid rgb(209, 209, 209);
+      }
+
+    .project-3-section {
+        height: 100vh;
+    }
+    
+    .project-3-section img {
+        width: 98%;
+        margin: 3px auto;
+        display: block;
+        padding-top: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        z-index: 0;
+    }
+
+
+    .project-4-section {
+        height: 100vh;
+        /* background: rgb(0, 68, 255); */
+      }
+      
+      .project-4 img { 
+      width: 98%;
+      margin: 3px auto;
+      display: block;
+      padding-top: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+      z-index: 0;
+      }
+
+      .project-5-section {
+        height: 100vh;
+        /* background: rgb(0, 68, 255); */
+      }
+      
+      .project-5 img { 
+      width: 98%;
+      margin: 3px auto;
+      display: block;
+      padding-top: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+      z-index: 0;
+      }
+
+/* Start Arrow Hovering Effect */
+/*
+.arrow {
+	z-index: 5;
+	position: absolute;
+  	left: 48.9%;
+    top: 90%;
+    width: 4vmin;
+    height: 4vmin;
+    background: transparent;
+    border-top: 1vmin solid black;
+    border-right: 1vmin solid black;
+    box-shadow: 0 0 0 black;
+    -webkit-transition: all 200ms ease;
+    transition: all 400ms ease;
+  }
+  
+  .arrow.right1 {
+    z-index: 5;
+    position: absolute;
+    right: 0;
+    -webkit-transform: translate3d(0,0 -50%, 0) rotate(135deg);
+            transform: translate3d(0, -50%, 0) rotate(135deg);
+  }
+
+  .arrow:hover {
+    z-index: 5;
+    border-color: rgb(250, 117, 117);
+    box-shadow: 0.5vmin -0.5vmin 0 black;
+  }
+  .arrow:before {
+    z-index: 5;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-40%, -60%) rotate(45deg);
+            transform: translate(-40%, -60%) rotate(45deg);
+    width: 200%;
+    height: 200%;
+  }
+  */
+/* End Arrow Hovering Effect */
+

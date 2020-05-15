@@ -1,0 +1,446 @@
+
+		html {
+      color: black;
+      scroll-behavior: smooth;
+		}
+
+    .landing-page-section {
+      height: 100vh;
+      /* background: red; */
+    }
+    
+    
+    .navbar {
+			font-size: 20px;
+			font-family: DIN Condensed;		
+			margin-bottom: 0;
+			border-radius: 0;
+			background-color:  transparent;
+			padding: 1% 0;
+      border: 0;
+    }
+ /*
+		.navbar-inverse .navbar-nav .home a {
+			color: rgb(255, 72, 72);
+			background-color:  transparent;
+    }
+    */
+    
+    .navbar-inverse .navbar-nav .home a:focus, .navbar-inverse .navbar-nav .about a:focus, .navbar-inverse .navbar-nav .projects a:focus,
+    .navbar-inverse .navbar-nav .resume a:focus, .navbar-inverse .navbar-nav .contact a:focus {
+      color: rgb(255, 72, 72);
+      background-color: transparent;
+    }
+
+    .navbar-inverse .navbar-nav .home a:hover {
+      color: rgb(252, 141, 141);
+      background-color: transparent;
+    }
+
+    .navbar-inverse .navbar-nav .about a:hover, .navbar-inverse .navbar-nav .projects a:hover,
+    .navbar-inverse .navbar-nav .resume a:hover, .navbar-inverse .navbar-nav .contact a:hover {
+      color: rgb(252, 141, 141);
+      background-color: transparent;
+    }
+
+    .nav navbar-nav navbar-right {
+      padding-right: 10px;
+    }
+
+    .nav navbar-nav navbar-right li:hover {
+      color: grey;
+    }
+  
+
+    /* Trying a header, light out 
+    .navbar {
+      padding: .8rem;
+      background-color;: transparent;
+    }
+
+    .navbar-nav li {
+      padding-right: 20px;
+    }
+
+    .nav-link {
+      font-size: 20px;
+    }
+
+    .nav navbar-nav navbar-right ul {
+      padding-right: 150px;
+    } */
+
+  
+    
+    #landing-pic {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 99%;
+      z-index: 0;
+      position: absolute;
+    }
+
+    #socials a li {
+      display: block;
+      vertical-align: right;
+      padding: 10px 0px;
+      z-index: 10;
+      padding-left: 10px;
+      text-align: right;
+     }
+
+    #socials {
+       padding-top: 25%;
+     }
+
+/* Start Arrow Hovering Effect */
+.arrow {
+	z-index: 5;
+	position: absolute;
+  	left: 48.9%;
+    top: 90%;
+    width: 4vmin;
+    height: 4vmin;
+    background: transparent;
+    border-top: 1vmin solid black;
+    border-right: 1vmin solid black;
+    box-shadow: 0 0 0 black;
+    -webkit-transition: all 200ms ease;
+    transition: all 400ms ease;
+  }
+  
+  .arrow.right1 {
+    z-index: 5;
+    position: absolute;
+    right: 0;
+    -webkit-transform: translate3d(0,0 -50%, 0) rotate(135deg);
+            transform: translate3d(0, -50%, 0) rotate(135deg);
+  }
+
+  .arrow:hover {
+    z-index: 5;
+    border-color: rgb(250, 117, 117);
+    box-shadow: 0.5vmin -0.5vmin 0 black;
+  }
+  .arrow:before {
+    z-index: 5;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-40%, -60%) rotate(45deg);
+            transform: translate(-40%, -60%) rotate(45deg);
+    width: 200%;
+    height: 200%;
+  }
+/* End Arrow Hovering Effect */
+
+.about-me-section {
+  height: 100vh;
+  /* background: rgb(0, 68, 255); */
+}
+
+#about-me-section img { 
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 99%;
+      z-index: 0;
+      position: absolute;
+}
+
+.projects-section {
+  height: 100vh;
+  /* background: rgb(0, 255, 55); */
+}
+
+.projects-section img {
+      width: 98%;
+      margin: 3px auto;
+      display: block;
+      padding-top: 40px;
+      padding-left: 15px;
+      padding-right: 15px;
+      z-index: 0;
+}
+
+.proj-1 {
+  height: 350px;
+  width: 350px;
+  position: absolute;
+  left: 200px;
+  top: 1985px;
+  
+}
+
+.proj-1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  
+}
+
+/*
+.proj-1 :not(img){
+  position: absolute;
+  top: 30%;
+  z-index: 1;
+  color: #FF5555;
+  text-align: center;
+  width: 100%;
+}
+.proj-1 h3 {
+  top: 50%;
+}
+*/
+
+.proj-2 {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  left: 600px;
+  padding-top: 100px;
+}
+
+.proj-2 img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.proj-3 {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  left: 200px;
+  top: 2350px;
+}
+
+.proj-3 img {
+  width: 100%;
+  height: 100%;
+}
+
+.proj-4 {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  left: 600px;
+  top: 2350px;
+}
+
+.proj-4 img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* Contact Me Begins */
+.contact-me-section {
+  height: 100vh;
+  /* background: rgb(229, 255, 0); */
+}
+
+.contact-me-section img {
+      width: 98%;
+      margin: 3px auto;
+      display: block;
+      padding-top: 40px;
+      padding-left: 15px;
+      padding-right: 15px;
+      z-index: 0;
+}
+
+/*
+.contact-sec h2 {
+  font-size: 28px;
+  font-family: DIN Condensed;
+  font-weight: 600;
+  padding: 15px 0;
+}
+
+#contact {
+  width: 100%;
+  background-color: rgba(8,7,7,0.90);
+}
+
+section#contact div.container {
+  padding: 5%;
+}
+
+#contact .btn-primary {
+  background-color:  #BE2525;
+  border: 1px solid #BE2525;
+}
+
+#contact .btn-primary:hover {
+  background-color:  #721616;
+}
+*/
+.container.contact-form {
+  padding: 10px 0;
+}
+
+/* Contact Me Ends */
+
+
+/* Form Begins */
+.form-section {
+  height: 100vh;
+  /* background: rgb(0, 68, 255); */
+}
+
+
+
+body {
+  font-family: DIN Condensed;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+#contact-form {
+  padding-top: 4%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+#contact-form dear-denis {
+  color: red;
+}
+
+label {
+  font-weight: 400;
+  cursor: pointer;
+}
+
+textarea,
+input {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  text-align: center;
+  background: none;
+  font-weight: 700;
+  font-family: DIN Condensed;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  max-width: 90%;
+  padding: 1rem;
+  border: 2px dashed rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  cursor: text;
+}
+
+textarea {
+  text-align: left;
+  /* overflow:hidden; */
+  
+  resize: none;
+  width: 90%;
+  border-color: rgba(0, 0, 0, 0)
+}
+
+textarea:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 2px dashed rgb(0, 0, 0);
+}
+
+textarea:focus:required:valid {
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+textarea:required:valid {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+input {
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.5);
+}
+
+input:required,
+textarea:required {
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.5);
+}
+
+input:focus {
+  border-bottom: 2px dashed rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+input:required:valid {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+input:required:invalid {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+:-ms-input-placeholder {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.expanding {
+  vertical-align: top;
+}
+
+.send-icn {
+  fill: rgb(0, 0, 0)
+}
+
+.send-icn:hover {
+  fill: rgb(248, 104, 104);
+  cursor: pointer;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  margin: 2vmax;
+}
+
+button:hover small {
+  opacity: 1;
+  color: #FF5555;
+}
+
+small {
+  display: block;
+  opacity: 0;
+}
+
+/* Form End */

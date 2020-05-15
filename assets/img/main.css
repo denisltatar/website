@@ -1,0 +1,417 @@
+
+/* Start Global */
+* {
+	margin: 0;
+	padding: 0;
+	/* New Animation stuff */
+	box-sizing: border-box;
+	background-color: rgb(255, 255, 255);
+}
+
+html {
+	font-size: 11px;
+	font-family: DIN Condensed;
+	color: black;
+}
+
+body {
+	/* background-image: url('/Linkedin.png'); */
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+ 
+p {
+	font-size: 1.8rem;
+	font-weight: 301px;
+}
+/* End Global */
+
+
+/* Start Landing Page */
+nav {
+	z-index: 3;
+	display: grid;
+	grid-template-columns: 1% 2fr 1fr 1%;
+	min-height: 8vh;
+	align-items: center;
+}
+
+.navigation {
+	background-color: transparent;
+	z-index: 3;
+	grid-column: 3/4;
+}
+
+
+section {
+	display: flex; 
+	height: 80vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.landing-pic img {
+	width: 95%;
+	margin: 2px auto;
+	display: block;
+	padding-top: 60px;
+	padding-left: 15px;
+	z-index: -1;
+}
+
+
+.navigation {
+	 float: right;
+	 height: 100%;
+	 background-color: transparent;
+	 font-size: 14px;
+	 background-color: transparent;
+ }
+
+ .navigation a {
+	 height: 100%;
+	 display: table;
+	 float: left;
+	 padding: 0px 20px;
+	 color: transparent;
+	 background-color: transparent;
+
+ }
+
+ .navigation a li {
+	 display: table-cell;
+	 vertical-align: middle;
+	 height: 100%;
+	 color: rgb(0, 0, 0);
+	 font-family: DIN Condensed;
+	 font-size: 20px;
+	 background-color: transparent;
+ }
+
+
+/* Start Arrow Hovering Effect */
+.arrow {
+	z-index: 5;
+	position: absolute;
+  	left: 48.6%;
+    top: 88%;
+    width: 4vmin;
+    height: 4vmin;
+    background: transparent;
+    border-top: 1vmin solid black;
+    border-right: 1vmin solid black;
+    box-shadow: 0 0 0 black;
+    -webkit-transition: all 200ms ease;
+    transition: all 400ms ease;
+  }
+  
+  .arrow.right1 {
+    z-index: 5;
+    position: absolute;
+    right: 0;
+    -webkit-transform: translate3d(0,0 -50%, 0) rotate(135deg);
+            transform: translate3d(0, -50%, 0) rotate(135deg);
+  }
+
+  .arrow:hover {
+    z-index: 5;
+    border-color: rgb(250, 117, 117);
+    box-shadow: 0.5vmin -0.5vmin 0 black;
+  }
+  .arrow:before {
+    z-index: 5;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-40%, -60%) rotate(45deg);
+            transform: translate(-40%, -60%) rotate(45deg);
+    width: 200%;
+    height: 200%;
+  }
+/* End Arrow Hovering Effect */
+
+
+.arrow.right2 {
+    z-index: 5;
+    position: absolute;
+    right: 0;
+    -webkit-transform: translate3d(0,0 -50%, 0) rotate(135deg);
+            transform: translate3d(0, -50%, 0) rotate(135deg);
+  }
+
+  .socials a li {
+	z-index: 2;
+	display: block;
+	vertical-align: middle;
+	padding-right: 10px;
+	padding: 10px 0px;
+ }
+
+ .about-me img {
+	position: fixed;
+	background: transparent;
+	width: 95%;
+	margin: 1px auto;
+	display: block;
+	padding-top: 150px;
+	padding-left: 1px;
+	z-index: 10;
+}
+ 
+/*
+.hero img {
+	width: 100%; 
+	height: 100%;
+	object-fit: cover;
+}
+*/
+
+/*
+.headline {
+	position: absolute;
+	top: 70%;
+	left: 10%;
+	font-size: 100px;
+	transform: translate(-20%, -70%);
+	color: black;
+}
+*/
+
+/*
+.slider {
+	z-index: -1;
+	position: absolute; 
+	top: 0;
+	left: 0;
+	width: 1900px;
+	height: 1000px;
+	background: white;
+}
+*/
+
+
+/*
+ .header {
+	 width: 100%;
+	 height: 75px;
+	 display: block;
+	 background-color: black; 
+ }
+
+ .inner-header {
+	 
+	 padding-left: 150px;
+	 width: 80%;
+	 height: 100%;
+	 display: block;
+	 margin: 0 auto;
+	 color: transparent;
+ }
+
+ 
+
+ .socials a li {
+	display: block;
+	vertical-align: middle;
+	padding: 0;
+	margin: 0;
+	padding: 10px 0px;
+ }
+ */
+
+ /* New Animation stuff */
+ 
+ 
+
+
+
+
+/* End Landing Page */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start About Me Page */
+/*
+.about-me {
+	padding-top: 30px;
+	padding-left: 50px;
+}
+
+.greetings {
+	font-size: 39pt;
+	color: #FF5555;
+}
+
+.about-me-text {
+	font-size: 39pt;
+}
+*/
+
+
+
+/* End About Me Page */
+
+
+
+
+ /* This will actually be a side nav */
+ /*
+ .top-nav {
+	 padding-left: 900px;
+	 font-size: 30px;
+	 background-color: aqua;
+ }
+ */
+/*
+ .nav-list {
+	 list-style: none;
+	 width: 100;
+	 height: 100;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+ }
+ */
+/*
+ li {
+	  margin: 0 0.7rem;
+ } */
+
+ /*
+ .nav-link {
+	 font-family: DIN Condensed;
+	 font-size: 5rem;
+	 padding: 1rem;
+ }
+ */
+
+ /*
+.nav-link:hover,
+.nav-link:focus {
+	background: linear-gradient(to top, rgb(245, 62, 62), rgb(246, 230, 83));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+} */
+
+/* min 35 */
+/*
+.menu-toggler {
+	position: absolute;
+	top: 13rem;
+	left: 1rem;
+	width: 5rem;
+	height: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: pointer;
+	z-index: 200;
+	transition: transform 650ms ease-out;
+	background: transparent;
+} */ /*
+.menu-toggler.open {
+	transform: rotate(-45deg);
+}
+/* Messing with our menu bar */
+/*
+.bar {
+	background: linear-gradient(to right,  rgb(31, 2, 2), rgb(236, 88, 145));
+	width: 50%;
+	height: 4px;
+	border-radius: .8rem;
+}
+
+.bar.half {
+	width: 25%;
+}
+*/
+
+/* Three bars design */
+/*
+.bar.start {
+	transform-origin: right;
+	transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+} 
+
+.open .bar.start {
+	transform: rotate(-450deg) translateX(0.8rem);
+}
+
+.bar.end {
+	align-self: flex-end;
+	transform-origin: left;
+	transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+
+.open .bar.end {
+	transform: rotate(-450deg) translateX(-0.8rem);
+}
+*/
+/* End Header */
+
+
+
+
+/* Start About */
+
+/* End About */
+
+/* Start Services */
+
+/* End Services */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

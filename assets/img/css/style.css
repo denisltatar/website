@@ -1,0 +1,1638 @@
+/* import fonts from fonts.css file */
+@import url(./fonts.css);
+
+/* css variables */
+@import  url(../partials/_variables.css);
+
+/* Global styling */
+@import url(../partials/_global.css);
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: none;
+}
+
+
+
+/* Start Navigation */
+.header_area .main-menu {
+    padding-top: 0.5%;
+}
+
+.header_area .main-menu .navbar {
+    padding: 1rem 20rem;
+} 
+
+.header_area .main-menu .nav-item .nav-link {
+    font: normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    color:var(--title-color);
+    padding: 1.7rem;
+}
+
+.header_area .main-menu .navbar-nav .active a {
+    background: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover {
+    background: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/* End Navigation */
+
+
+/* Start Banner */
+.site-main {
+    padding-top: 2%;
+    overflow-x: none;
+}
+
+.site-main .site-banner {
+    /* NOT WORKING */
+    background: url(../img/home-banner.png) no-repeat 20% 20%;
+    overflow-x: none;
+}
+
+.site-main .site-banner .site-title h3 {
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after {
+    content: "";
+    height: 2px;
+    width: 18vw;
+    /* background: black;
+    display: inline-block; */
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+#banner-img {
+  background-color: aqua;
+}
+
+
+.site-main .site-banner .site-title h1 {
+    font-size: 3rem;
+}
+
+.site-main .site-banner .site-title h4 {
+    font-size: 1.0rem;
+}
+
+.site-main .site-banner .banner-image > img {
+    padding: 7rem 0;
+    width: 90rem;
+}
+
+.site-main .site-banner .banner-image img {
+    height: 300px;
+    widows: 300px;
+}
+
+/* End Banner */
+
+
+/* Start About Area */
+.site-main .about-area {
+    background: url(../img/about-me-banner.png) no-repeat 20% 50%;
+    overflow-x: none;
+}
+
+.site-main .about-area {
+    padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 > span {
+    display: block;
+    font: normal bold 49px/60px var(--roboto);
+    letter-spacing: 2px;
+    padding: 0 1.2rem;
+}
+
+/* Come back to change the alignment of the "let me intro myself" bit */
+.site-main .about-area .about-title .paragraph > p {
+    padding: 0.4rem 1.2rem;
+}
+/* End About Area */
+
+
+/*
+.site-main .project-area .button-group button {
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--roboto);
+    text-transform: uppercase;
+}
+
+
+.site-main .project-area .button-group button + button {
+    padding-left: 3rem;
+}
+
+.site-main .project-area .grid .out-project > .title h4 {
+    font: normal 700 25px/12px var(--roboto);
+} */
+
+
+/* #2 project area */
+#view {
+    background-color: aqua;
+}
+
+#item1 {
+    background-color: red;
+}
+
+#item1 img {
+    justify-content: center;
+}
+
+.projects {
+  
+  justify-content: center;
+  font: var(--roboto);
+}
+
+.projects .row {
+  padding: 15px 180px;
+}
+
+
+
+/* New */
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.container-fliud {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(245, 156, 156);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.container-fliud:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+    
+
+/****** START PROJECTS SECTION ******/ 
+/* General set up */
+#row1-col1, #row1-col2 {
+  padding: 50px 80px;
+}
+#project-container {
+  width: 80%;
+}
+#project-title {
+  padding-top: 40px;
+  font: normal bold 50px/72px var(--roboto);
+  
+}
+
+#new-project-title{
+  padding-top: 40px;
+  font: normal 500 30px/50px var(--pacifico);
+}
+
+/* Project 1 Modal */
+/* The Modal (background) */
+/* Button */
+#myBtn {
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background: transparent;
+  border: 0;
+}
+
+#myBtn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color:  rgba(0,0,0,0.19);
+  color: white;
+}
+
+#video-para {
+  padding: 150px;
+  font: normal 35px/45px var(--roboto);
+}
+
+
+
+/*
+#code-row1 {
+  background: url(../img/bubble.png) no-repeat 100% 100%;
+  background-size: 60% 80%;
+} */
+
+#myModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content Box */
+.modal-content {
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 20px solid rgb(255, 255, 255);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Paragraphs! */
+.modal-content p {
+  color: rgb(114, 114, 114);
+}
+
+.modal-content .para-bold {
+  font: normal 20px/25px var(--roboto);
+  color: rgb(0, 0, 0);
+}
+
+/* The Close Button */
+.close {
+  color: rgb(255, 180, 180);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 5, 5);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ICONS USED WITHIN MODALS!!!! */
+#photoshop-icon, #illustrator-icon, #xd-icon, #xcode-icon, #visual-code,
+#procreate-icon, #instagram-icon, #youtube-icon, #tensorflow-icon, #netbeans-icon,
+#firebase-icon {
+  padding-left: 5px;
+  padding-bottom: 2px;
+}
+
+#porsche-title {
+  font: normal 35px/25px var(--roboto);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#porsche-repo {
+  padding-left: 5px;
+  padding-bottom: 2px;
+}
+
+#github-repo {
+  height: 15px;
+  widows: 15px;
+}
+
+i {
+  height: 20px;
+  width: 20px;
+}
+
+a > i {
+  padding-left: 5px;
+  padding-top: 2px;
+  size: 20px;
+  color: var(--border-color)
+}
+
+a:hover > i {
+  color: var(--primary-color);
+}
+
+.para-bold {
+  font: normal 500 23px/30px var(--roboto);
+  color: black;
+}
+
+.para {
+  font: normal 500 23px/30px var(--roboto);
+}
+
+
+/* PrivaSeeable */
+/* The Modal (background) */
+/* Button */
+#myBtn2 {
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background: transparent;
+  border: 0;
+}
+
+#myBtn2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color:  rgba(0,0,0,0.19);
+  color: white;
+}
+
+
+#myModal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#priv-image {
+  padding: 80px;
+}
+
+#priv-video {
+  padding: 10px;
+}
+
+/* Modal Content Box */
+.modal-content2 {
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 20px solid rgb(255, 255, 255);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close2 {
+  color: rgb(255, 180, 180);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.close2:hover,
+.close2:focus {
+  color: rgb(255, 5, 5);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Mood Playlist */
+/* The Modal (background) */
+/* Button */
+#myBtn3 {
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background: transparent;
+  border: 0;
+}
+
+#myBtn3:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color:  rgba(0,0,0,0.19);
+  color: white;
+}
+
+
+#myModal3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/*
+#code-row2 {
+  background: url(../img/about-me-banner.png) no-repeat 50% 50%;
+} */
+
+#priv-image {
+  padding: 80px;
+}
+
+#priv-video {
+  padding: 10px;
+}
+
+/* Modal Content Box */
+.modal-content3 {
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 20px solid rgb(255, 255, 255);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close3 {
+  color: rgb(255, 180, 180);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.close3:hover,
+.close3:focus {
+  color: rgb(255, 5, 5);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Portfolio Website */
+/* The Modal (background) */
+/* Button */
+#myBtn4 {
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background: transparent;
+  border: 0;
+}
+
+#myBtn4:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color:  rgba(0,0,0,0.19);
+  color: white;
+}
+
+
+#myModal4 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#priv-image {
+  padding: 80px;
+}
+
+#priv-video {
+  padding: 10px;
+}
+
+/* Modal Content Box */
+.modal-content4 {
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 20px solid rgb(255, 255, 255);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close4 {
+  color: rgb(255, 180, 180);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close4:hover,
+.close4:focus {
+  color: rgb(255, 5, 5);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/* Math It */
+/* The Modal (background) */
+/* Button */
+#myBtn5 {
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background: transparent;
+  border: 0;
+}
+
+#myBtn5:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color:  rgba(0,0,0,0.19);
+  color: white;
+}
+
+
+#myModal5 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#priv-image {
+  padding: 80px;
+}
+
+#priv-video {
+  padding: 10px;
+}
+
+/* Modal Content Box */
+.modal-content5 {
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 20px solid rgb(255, 255, 255);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close5 {
+  color: rgb(255, 180, 180);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.close5:hover,
+.close5:focus {
+  color: rgb(255, 5, 5);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* ML Model Training */
+/* The Modal (background) */
+/* Button */
+#myBtn6 {
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background: transparent;
+  border: 0;
+}
+
+#myBtn6:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color:  rgba(0,0,0,0.19);
+  color: white;
+}
+
+
+#myModal6 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#priv-image {
+  padding: 80px;
+}
+
+#priv-video {
+  padding: 10px;
+}
+
+/* Modal Content Box */
+.modal-content6 {
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 20px solid rgb(255, 255, 255);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close6 {
+  color: rgb(255, 180, 180);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.close6:hover,
+.close6:focus {
+  color: rgb(255, 5, 5);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* RaceIt */
+/* The Modal (background) */
+/* Button */
+#myBtn7 {
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background: transparent;
+  border: 0;
+}
+
+#myBtn7:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color:  rgba(0,0,0,0.19);
+  color: white;
+}
+
+
+#myModal7 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#priv-image {
+  padding: 80px;
+}
+
+#priv-video {
+  padding: 10px;
+}
+
+#games-row{
+  padding: 25px 25px;
+}
+
+#games-last2-row{
+  padding: 35px 0px;
+}
+
+/* Modal Content Box */
+.modal-content7 {
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 20px solid rgb(255, 255, 255);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close7 {
+  color: rgb(255, 180, 180);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.close7:hover,
+.close7:focus {
+  color: rgb(255, 5, 5);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Minion Run */
+/* The Modal (background) */
+/* Button */
+#myBtn8 {
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background: transparent;
+  border: 0;
+}
+
+#myBtn8:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color:  rgba(0,0,0,0.19);
+  color: white;
+}
+
+
+#myModal8 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#priv-image {
+  padding: 80px;
+}
+
+#priv-video {
+  padding: 10px;
+}
+
+/* Modal Content Box */
+.modal-content8 {
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 20px solid rgb(255, 255, 255);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close8 {
+  color: rgb(255, 180, 180);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.close8:hover,
+.close8:focus {
+  color: rgb(255, 5, 5);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+/* =========== Design Projects =========== */
+/* Dream Big Piece */
+/* The Modal (background) */
+/* Button */
+#myBtnd1 {
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background: transparent;
+  border: 0;
+}
+
+#myBtnd1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color:  rgba(0,0,0,0.19);
+  color: white;
+}
+
+
+#myModald1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content Box */
+.modal-contentd1 {
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 20px solid rgb(255, 255, 255);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.closed1 {
+  color: rgb(255, 180, 180);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.closed1:hover,
+.closed1:focus {
+  color: rgb(255, 5, 5);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Dior X Kaws Piece */
+/* The Modal (background) */
+/* Button */
+#myBtnd2 {
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background: transparent;
+  border: 0;
+}
+
+#myBtnd2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color:  rgba(0,0,0,0.19);
+  color: white;
+}
+
+
+#myModald2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content Box */
+.modal-contentd2 {
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 20px solid rgb(255, 255, 255);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.closed2 {
+  color: rgb(255, 180, 180);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.closed2:hover,
+.closed2:focus {
+  color: rgb(255, 5, 5);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Gucci Piece */
+/* The Modal (background) */
+/* Button */
+#myBtnd3 {
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background: transparent;
+  border: 0;
+}
+
+#myBtnd3:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color:  rgba(0,0,0,0.19);
+  color: white;
+}
+
+
+#myModald3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content Box */
+.modal-contentd3 {
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 20px solid rgb(255, 255, 255);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.closed3 {
+  color: rgb(255, 180, 180);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.closed3:hover,
+.closed3:focus {
+  color: rgb(255, 5, 5);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Avu Clothing */
+/* The Modal (background) */
+/* Button */
+#myBtnd4 {
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background: transparent;
+  border: 0;
+}
+
+#myBtnd4:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color:  rgba(0,0,0,0.19);
+  color: white;
+}
+
+#myModald4 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content Box */
+.modal-contentd4 {
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 20px solid rgb(255, 255, 255);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.closed4 {
+  color: rgb(255, 180, 180);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.closed4:hover,
+.closed4:focus {
+  color: rgb(255, 5, 5);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#first-post {
+  padding-bottom: 20px;
+}
+
+#logos-row {
+  padding: 20px;
+}
+
+#logo-left {
+  padding: 0;
+}
+#logo-right {
+  padding: 0;
+}
+
+#general-row{
+  padding: 40px 100px;
+}
+
+
+/* Sunset Illustration */
+/* The Modal (background) */
+/* Button */
+#myBtnd5 {
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background: transparent;
+  border: 0;
+}
+
+#myBtnd5:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color:  rgba(0,0,0,0.19);
+  color: white;
+}
+
+#myModald5 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content Box */
+.modal-contentd5 {
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 20px solid rgb(255, 255, 255);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.closed5 {
+  color: rgb(255, 180, 180);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.closed5:hover,
+.closed5:focus {
+  color: rgb(255, 5, 5);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Strange Fruits Cover Art #1 */
+/* The Modal (background) */
+/* Button */
+#myBtnd6 {
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background: transparent;
+  border: 0;
+}
+
+#myBtnd6:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color:  rgba(0,0,0,0.19);
+  color: white;
+}
+
+#myModald6 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content Box */
+.modal-contentd6 {
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 20px solid rgb(255, 255, 255);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.closed6 {
+  color: rgb(255, 180, 180);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.closed6:hover,
+.closed6:focus {
+  color: rgb(255, 5, 5);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Strange Fruits Cover Art #2 */
+/* The Modal (background) */
+/* Button */
+#myBtnd7 {
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background: transparent;
+  border: 0;
+}
+
+#myBtnd7:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color:  rgba(0,0,0,0.19);
+  color: white;
+}
+
+#myModald7 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content Box */
+.modal-contentd7 {
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 20px solid rgb(255, 255, 255);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.closed7 {
+  color: rgb(255, 180, 180);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.closed7:hover,
+.closed7:focus {
+  color: rgb(255, 5, 5);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/* Chief Wolf Clothing */
+/* The Modal (background) */
+/* Button */
+#myBtnd9 {
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background: transparent;
+  border: 0;
+}
+
+#myBtnd9:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color:  rgba(0,0,0,0.19);
+  color: white;
+}
+
+#myModald9 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content Box */
+.modal-contentd9 {
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 20px solid rgb(255, 255, 255);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.closed9 {
+  color: rgb(255, 180, 180);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.closed9:hover,
+.closed9:focus {
+  color: rgb(255, 5, 5);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* End Projects Area */
+
+
+
+/* Start Footer Area */
+footer.footer-area {
+    padding: 5rem 0;
+    background: url(../img/footer-background\ copy.png) no-repeat;
+}
+
+footer.footer-area .social h5{
+    font: normal 500 23px/30px var(--roboto);
+}
+
+footer.footer-area .social a > i {
+    font-size: 22px;
+    padding: 2rem;
+    color: var(--border-color)
+}
+
+footer.footer-area .social a:hover > i {
+    color: var(--primary-color);
+}
+
+
+/* End Footer Area */
+
+
+/* Media Queries *?
+
+/* Contact form  stuff */
+ /*
+body {
+  overflow-x: none;
+}
+
+#my-form {
+  
+}
+
+#contact-text {
+  font: normal 700 25px/2px var(--roboto);
+  color: rgb(75, 67, 67);
+}
+
+.contact-form-edit {
+  overflow-x: none;
+  
+
+  font: normal 700 25px/2px var(--roboto);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+#contact-form {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+label {
+  font-weight: 400;
+  cursor: pointer;
+}
+
+textarea,
+input {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  text-align: center;
+  background: none;
+  
+
+  font: normal 700 25px/2px var(--roboto);
+  color: rgb(5, 5, 5);
+  max-width: 90%;
+  padding: 1rem;
+  border: 2px dashed rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  cursor: text;
+  
+}
+
+textarea {
+  text-align: left;
+  
+  
+  resize: none;
+  width: 90%;
+  border-color: rgba(255, 255, 255, 0)
+}
+
+textarea:focus {
+  background-color: rgba(255, 51, 51, 0.2);
+  border: 2px dashed rgba(255, 51, 51, 0.2);
+}
+
+textarea:focus:required:valid {
+  border: 2px solid rgba(255, 51, 51, 0.2);
+  border-bottom: 2px solid rgb(255, 36, 36);
+}
+
+textarea:required:valid {
+  border-bottom: 2px solid rgb(255, 36, 36);
+}
+
+input {
+  border-bottom: 2px dashed rgb(255, 36, 36);
+}
+
+input:required,
+textarea:required {
+  border-bottom: 2px dashed rgb(255, 36, 36);
+}
+
+input:focus {
+  border-bottom: 2px dashed rgba(255, 51, 51, 0.2);
+  background-color: rgba(255, 51, 51, 0.2);
+}
+
+input:required:valid {
+  border-bottom: 2px solid rgba(173, 173, 173, 0.63);
+}
+
+input:required:invalid {
+  color: rgba(173, 173, 173, 0.63);
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+  color: rgba(112, 112, 112, 0.63);
+  font-style: italic;
+  font-weight: 400;
+}
+
+
+:-ms-input-placeholder {
+  text-align: center;
+  color: rgba(112, 112, 112, 0.63);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.expanding {
+  vertical-align: top;
+}
+
+.send-icn {
+  fill: rgb(0, 0, 0);
+}
+
+.send-icn:hover {
+  fill: rgb(253, 133, 133);
+  cursor: pointer; 
+}
+
+
+
+button:hover small {
+  opacity: 1;
+  color: rgb(253, 133, 133);;
+}
+
+small {
+  display: block;
+  opacity: 0;
+}
+
+.website {
+  opacity: 1;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  text-align: center;
+  display: block;
+  margin-top: 7%;
+  
+}
+
+.website a {
+  color: rgb(253, 90, 90);
+} */
+
+
+
+/* AGAIN */
+.contact-text {
+  font-family: 'Roboto', cursive;
+}
+
+.new-form {
+  font-family: 'Roboto', cursive;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+#contact-form {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+label {
+  font-weight: 400;
+  cursor: pointer;
+}
+
+textarea,
+input {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  text-align: center;
+  background: none;
+  font-weight: 700;
+  font-family: 'Roboto', cursive;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  max-width: 90%;
+  padding: 1rem;
+  box-sizing: border-box;
+  cursor: text;
+}
+
+textarea {
+  text-align: left;
+  /* overflow:hidden; */
+  
+  resize: none;
+  width: 90%;
+  color: rgb(251, 112, 112);
+}
+
+textarea:focus {
+  background-color: rgba(253, 63, 63, 0.2);
+}
+
+textarea:focus:required:valid {
+  border-bottom: 2px solid rgb(251, 112, 112);
+}
+
+textarea:required:valid {
+  border-bottom: 2px solid rgb(251, 112, 112);
+}
+
+input {
+  border-bottom: 2px dashed rgb(251, 112, 112);
+  color: rgb(251, 112, 112);
+}
+
+input:required,
+textarea:required {
+  border-bottom: 2px dashed rgb(251, 112, 112);
+}
+
+input:focus {
+  border-bottom: 2px dashed rgb(251, 112, 112);
+  /* Input background color */
+  background-color: rgba(253, 63, 63, 0.2);
+}
+
+input:required:valid {
+  border-bottom: 2px solid rgb(251, 112, 112);
+}
+
+input:required:invalid {
+  color: rgb(251, 112, 112);
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+  color: rgb(251, 112, 112);
+  font-style: italic;
+  font-weight: 400;
+}
+
+
+
+:-ms-input-placeholder {
+  text-align: center;
+  color: rgb(251, 112, 112);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.expanding {
+  vertical-align: top;
+}
+
+.send-icn {
+  fill: rgb(0, 0, 0)
+}
+
+.send-icn:hover {
+  fill: rgb(255, 67, 67);
+  cursor: pointer;
+}
+
+#submit-text {
+  background: none;
+  border: none;
+  outline: none;
+  margin: 2vmax;
+}
+
+
+
+button:hover small {
+  opacity: 1;
+  color: rgb(255, 67, 67);
+}
+
+small {
+  display: block;
+  opacity: 0;
+}
+
+.website {
+  opacity: 1;
+  font-size: 16px;
+  color: rgb(251, 112, 112);
+  position: relative;
+  text-align: center;
+  display: block;
+  margin-top: 7%;
+  
+}
+
+.website a {
+  color: rgb(246, 18, 18);
+}
