@@ -54,6 +54,7 @@
 }
 .ti-tablet:before {
 	content: "\e609";
+	color: black;
 }
 .ti-star:before {
 	content: "\e60a";
@@ -954,6 +955,7 @@
 }
 .ti-linkedin:before {
 	content: "\e735";
+	color: rgb(255, 79, 79);
 }
 .ti-layout-sidebar-2:before {
 	content: "\e736";
@@ -984,7 +986,11 @@
 }
 .ti-github:before {
 	content: "\e73f";
+	color: rgb(255, 79, 79);
 }
+
+
+
 .ti-flickr:before {
 	content: "\e740";
 }
