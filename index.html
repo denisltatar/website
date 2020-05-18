@@ -7,7 +7,23 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        
+        <!-- 
+        Editing index.html
+        Note to self: If you want to add another coding or design project, follow this proccess. First, 
+        create the new row and make sure you have two cols. Assuming you copied another built coding
+        or projects row, you'll need to change three pieces here within this file. You button should be
+        "myBtn#" if you're creating a coding project, "myBtnd#" for design. Change this with the correct
+        number to follow the pattern I've created. Next, change you Modal id, "myModal#" for coding, and 
+        "myModald#" for design. Lastly, edit your modal content class. "modal-content#" for coding and 
+        "modal-contentd#" for design.
+
+        Editing style.css
+        Copy a design or code project and change the number attached to each componenet you're calling on
+        within this file.
+
+        Editing main.js
+        Do the same you did in style.css. Copy an old project and change the variable numbers accordingly.
+        -->
 
         <link rel="manifest" href="site.webmanifest">
         <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico"> -->
@@ -53,7 +69,7 @@
        <div class="header-area header-transparrent ">
             <div class="main-header header-sticky">
                 <div class="container">
-                    <div class="row align-items-center">
+                    <div class="row align-items-center" >
                         <!-- Logo -->
                         <!-- <div class="col-xl-2 col-lg-2 col-md-1">
                             <div class="logo">
@@ -62,7 +78,7 @@
                         </div> -->
                         <div class="col-xl-8 col-lg-8 col-md-8">
                             <!-- Main-menu -->
-                            <div class="main-menu f-right d-none d-lg-block">
+                            <div class="main-menu f-right d-none d-lg-block" >
                                 <nav> 
                                     <ul id="navigation" class="nav-text">    
                                         <li><a href="#home"> Home</a></li>
@@ -106,7 +122,7 @@
         <!-- Slider Area Start-->
         <div class="slider-area " id="home">
             <div class="slider-active">
-                <div class="single-slider slider-height d-flex align-items-center" data-background="assets/img/hero/h1_hero-copy.png">
+                <div class="single-slider slider-height d-flex align-items-center" data-background="assets/img/hero/new-background-01.png">
                     <div class="container">
                         <div class="row d-flex align-items-center">
                             <div class="col-lg-7 col-md-9 ">
@@ -180,7 +196,7 @@
             <!-- About Me End -->
 
         <!-- ============================= Coding Projects Start ============================= -->
-        <div class="container-fluid" id="projects" data-background="assets/img/hero/h1_hero-copy.png">
+        <div class="container-fluid" id="projects" data-background="assets/img/hero/">
         
             <!-- ========== START Coding Projects ========== -->
         <section class="new-projects" id="new-projects">
@@ -192,6 +208,206 @@
                     <h2 id="title-header">CODING PROJECTS</h2>
                 </div>
     
+                <!-- START FIRST ROW CODING PROJECTS -->
+                <div class="row" id="code-row1">
+                    <!-- START COL 1 -->
+                    <div class="col" id="row1-col1">
+                        <!-- Trigger/Open The Modal -->
+                        <div class="text-center">
+                            <button id="myBtn9" id="mobile-cover">
+                                <img id="mobile" src="./assets/img/Nutrifit/Group 49.png" alt="" width="215" height="410">
+                            </button>
+                            <p class="para-bold" id="new-project-title">NutriFit</p>
+                            <!-- <h2 id="title-project">Porsche Car Connect</h2> -->
+                        </div>
+                
+                        <!-- The Modal -->
+                        <div id="myModal9" class="modal9">
+                
+                            <!-- Modal content -->
+                            <div class="modal-content9">
+                                <span class="close9">&times;</span>
+                                <h4 class="text-center" id="porsche-title">NutriFit</h4>
+                                <p class="para-bold" id="style-work">Type of Work: Mobile Development (iOS)</p>
+                                <p class="para-bold">Number of Hours: 24+ hours</p>
+                                <p class="para-bold">Software Used:
+                                    <img src="./assets/img/photoshop.dms" alt="" width="34" height="33" id="photoshop-icon">
+                                    <img src="./assets/img/illustrator.png" alt="" width="31" height="30" id="illustrator-icon">
+                                    <img src="./assets/img/adobeXD.png" alt="" width="31" height="30" id="xd-icon">
+                                    <img src="./assets/img/xcode.png" alt="" width="33" height="32" id="xcode-icon">
+                                </p>
+                                <p class="para-bold">API Used: 
+                                    <img src="./assets/img/firebase-icon.png" alt="" width="34" height="33" id="firebase-icon">
+                                </p>
+                                <p class="para-bold">Languages: Swift 5</p>
+                                <p class="para-bold" id="github-link">Github Repository:
+                                    <a href="https://github.com/commai/NutriFacts">
+                                        <i class="ti-github" id="github-icon"></i>
+                                    </a>
+                                </p>
+                                <p class="para-bold">
+                                    Inspiration:
+                                </p>
+                                <p class="para">
+                                    There are many apps nowadays that measure caloric intake but it's
+                                     a struggle to analyze the intake of other vital nutrients such as vitamins
+                                      and protein. Luckily, we have a solution...and that is an app that scans nutrition
+                                       fact labels and displays a dashboard containing your daily intake to make sure
+                                        you're eating healthy and getting the appropriate nutrients.
+
+                                    This is especially beneficial while being indoors during quarantine where we're 
+                                    more susceptible to binge eating out of boredom. However, this is can also transcend
+                                    further as a lifestyle change, so it's more than just another app. It also allows for 
+                                    mindful consumption of food, which lends itself to the amount of money that you spend
+                                    on outside food and such.
+                                </p>
+                                <p class="para-bold">
+                                    What It Does:
+                                </p>
+                                <p class="para">
+                                    Scan and go. It's a clean way of taking in the information in a really simple 
+                                    manner and displaying this data through pie charts. This helps the user see exactly
+                                     what they need to see when it comes to healthy eating. Their consumption of micro
+                                      nutrients is a vital part to a health and active lifestyle. You're able to see your
+                                       intake on a daily basis, and for each scan the pie graphs containing your data will update.
+
+                                    All you do is scan the nutrition label, and the app automatically calculates and puts 
+                                    together your nutrient intake percentage daily value.
+                                </p>
+
+                                <p class="para-bold">
+                                    How We Built It:
+                                </p>
+                                <p class="para">
+                                    We used the following:
+
+                                    Google ML Kit (Text Recognition (OCR)),
+                                    Google Firebase,
+                                    Google Firestore,
+                                    Swift,
+                                    HTML/CSS,
+                                    JavaScript,
+                                    NutriFacts is an iOS app built in Xcode with Swift.
+                                </p>
+
+                                
+                                <p class="para-bold">
+                                    What's next for NutriFacts:
+                                </p>
+                                <p class="para">
+                                    Hopefully deploying this app on the App Store! Creating
+                                     some branding around this product (creating social media
+                                      accounts to get the name out there). Get our friends to 
+                                      use it during quarantine! Expanding it to a search for foods 
+                                      that don't necessarily have a nutritional food chart, this can also 
+                                      be done using google's image classifier, and their preset models!
+                                </p>
+
+                                <p class="para-bold">
+                                    Here's what the application looks like:
+                                </p>
+                                <div class="row" id="general-row">
+                                    <div class="col">
+                                        <img src="./assets/img/Nutrifit/Group 49.png" alt="" width="200" height="400">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./assets/img/Nutrifit/Group 50.png" alt="" width="200" height="400">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./assets/img/Nutrifit/Group 51.png" alt="" width="200" height="400">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./assets/img/Nutrifit/Group 110.png" alt="" width="200" height="400">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./assets/img/Nutrifit/Group 111.png" alt="" width="200" height="400">
+                                    </div>
+                                </div>
+
+                                <div class="row" id="general-row">
+                                    <div class="col">
+                                        <img src="./assets/img/Nutrifit/Group 112.png" alt="" width="200" height="400">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./assets/img/Nutrifit/Group 113.png" alt="" width="200" height="400">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./assets/img/Nutrifit/Group 114.png" alt="" width="200" height="400">
+                                    </div>
+                                    <div class="col">
+                                        <img src="./assets/img/Nutrifit/Group 115.png" alt="" width="200" height="400">
+                                    </div>
+                                </div>
+                
+                                
+                                <!-- Video-->
+                                <p class="para">Here's a video of what the application looks like on a mobile device (this is an older version of the app)!:</p>
+                                <div class="row text-center" id="general-row">
+                                    <div class="col text-center" id="video-style">
+                                        <iframe width="860" height="615" src="https://www.youtube.com/embed/6TgMw0uowXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END COL 1 -->
+                
+                    <!-- START COL 2 -->
+                    <div class="col" id="row1-col2">
+                        <!-- Trigger/Open The Modal -->
+                        <div class="text-center">
+                            <button id="myBtn10">
+                                <img src="./assets/img/Viva/cover.png" alt="" height="384" width="420">
+                            </button>
+                            <p class="para-bold" id="new-project-title">Viva</p>
+                        </div>
+                
+                        <!-- The Modal -->
+                        <div id="myModal10" class="modal">
+                
+                            <!-- Modal content -->
+                            <div class="modal-content10">
+                                <span class="close10">&times;</span>
+                                <h4 class="text-center" id="porsche-title">Viva</h4>
+                                <p class="para-bold" id="style-work">Type of Work: Front-end Web Development</p>
+                                <p class="para-bold">Number of Hours: 12 hours</p>
+                                <p class="para-bold">Software Used:
+                                    <img src="./assets/img/illustrator.png" alt="" width="31" height="30" id="illustrator-icon">
+                                    <img src="./assets/img/adobeXD.png" alt="" width="31" height="30" id="xd-icon">
+                                    <img src="./assets/img/visual-code.png" alt="" width="31" height="30" id="visual-code">
+                                </p>
+                                <p class="para-bold">Languages: HTML, CSS, and JavaScript</p>
+                                <p class="para-bold" id="github-link">Github Repository:
+                                    <a href="https://github.com/commai/Pronto">
+                                        <i class="ti-github"></i>
+                                    </a>
+                                </p>
+
+                                <p class="para-bold">Link to see website: <a href="http://execviva.com/" id="link-to-site">http://execviva.com/</a></p>
+
+                                <p class="para-bold">About Viva</p>
+                                <p class="para">
+                                    Viva is a.....
+                                </p>
+
+                                
+                                
+                            </div>
+                
+                        </div>
+                    </div>
+                    <!-- END COL 2 -->
+                
+
+                
+
+                
+
+
+
+
+                </div>
+                <!-- START FIRST ROW CODING PROJECTS -->
 
                 <!-- START FIRST ROW CODING PROJECTS -->
                 <div class="row" id="code-row1">
@@ -354,6 +570,8 @@
 
                 </div>
                 <!-- START FIRST ROW CODING PROJECTS -->
+
+                
 
 
                 <!-- START SECOND ROW CODING PROJECTS -->
@@ -820,8 +1038,9 @@
 
 
             </div>
-            </div>
+            
         </section>
+        </div>
         <!-- ========== END Coding Projects ========== -->
 
         <!-- ========== START Design Projects ========== -->
@@ -861,9 +1080,9 @@
                                         Steve Void, the owner of the record label reached out to me through Instagram and 
                                         the rest was history. I got the chance to work on two pieces for Steve, this being the first piece. For more
                                         details about Steve click
-                                        <a href="https://www.insomniac.com/music/artists/steve-void/">here.</a>
+                                        <a href="https://www.insomniac.com/music/artists/steve-void/" id="link-to-site">here.</a>
                                         If you want to read more about his record label, click 
-                                        <a href="https://strangefruits.net/">here.</a>
+                                        <a href="https://strangefruits.net/" id="link-to-site">here.</a>
                                         
                                     </p>
                                     <p class="para">
@@ -904,9 +1123,9 @@
                                     Steve Void, the owner of the record label reached out to me through Instagram and 
                                     the rest was history. I got the chance to work on two pieces for Steve, this being the second piece. For more
                                     details about Steve click
-                                    <a href="https://www.insomniac.com/music/artists/steve-void/">here.</a>
+                                    <a href="https://www.insomniac.com/music/artists/steve-void/" id="link-to-site">here.</a>
                                     If you want to read more about his record label, click 
-                                    <a href="https://strangefruits.net/">here.</a>
+                                    <a href="https://strangefruits.net/" id="link-to-site">here. </a>
                                     
                                 </p>
                                 <p class="para">
@@ -986,9 +1205,9 @@
                                 Donnelly who is an artist and designer.
                                 I liked his work for a while and always wanted to create something similar to his
                                 style. Click
-                                <a href="https://en.wikipedia.org/wiki/Kaws">here</a>
+                                <a href="https://en.wikipedia.org/wiki/Kaws" id="link-to-site">here</a>
                                 to read more on Brian. Click 
-                                <a href="https://kawsone.com/password">here</a>
+                                <a href="https://kawsone.com/password" id="link-to-site">here</a>
                                 to view his website.
                             </p>
                             <p class="para">
@@ -997,7 +1216,7 @@
         
                             <div class="row">
                                 <div class="col text-center">
-                                    <img src="./img/kaws.PNG" alt="" width="600" height="900">
+                                    <img src="./assets/img/kaws.PNG" alt="" width="600" height="900">
                                 </div>
                             </div>
                         </div>
@@ -1038,7 +1257,7 @@
             
                             <div class="row">
                                 <div class="col text-center">
-                                    <img src="./img/gucci.PNG" alt="" width="600" height="900">
+                                    <img src="./assets/img/gucci.PNG" alt="" width="600" height="900">
                                 </div>
                             </div>
                         </div>
@@ -1069,12 +1288,12 @@
                                 </p>
                                 <p class="para-bold" id="github-link">Instagram:
                                     <a href="https://www.instagram.com/avuclothing/">
-                                        <i class="fab fa-instagram" id="instagram-icon"></i>
+                                        <i class="ti-instagram"></i>
                                     </a>
                                 </p>
                                 <p class="para-bold" id="github-link">Youtube:
                                     <a href="https://www.youtube.com/channel/UC4aog_02uHsTtcTMDk9jgmA">
-                                        <i class="fab fa-youtube" id="youtube-icon"></i>
+                                        <i class="ti-youtube"></i>
                                     </a>
                                 </p>
                                 <p class="para">
@@ -1294,7 +1513,7 @@
                         <p class="para-bold" id="new-project-title">Chief Wolf Clothing</p>
                     </div>
                     <!-- The Modal -->
-                    <div id="myModald9" class="modal">
+                    <div id="myModald9" class="modal9">
                             <!-- Modal content -->
                             <div class="modal-contentd9">
                                 <span class="closed9">&times;</span>
@@ -1322,7 +1541,7 @@
                                 </p>
                                 <div class="row">
                                     <div class="col text-center">
-                                        <img src="./assets/img/Chief-Wolf-Clothing/Black T Shirt Design-01.png" alt="" width="800" height="430">
+                                        <img src="./assets/img/Chief-Wolf-Clothing/Black T Shirt Design-01.png" alt="" width="850" height="430">
                                     </div>
                                 </div>
 
@@ -1803,83 +2022,7 @@
 
     </main>
    <footer>
-
-       <!-- Footer Start-->
-       <!--
-      <div class="footer-main" data-background="assets/img/shape/footer_bg.png">
-        <div class="footer-area footer-padding">
-            <div class="container">
-                <div class="row d-flex justify-content-between">
-                    <div class="col-lg-3 col-md-4 col-sm-8">
-                       <div class="single-footer-caption mb-50">
-                         <div class="single-footer-caption mb-30">
-                              <!-- logo 
-                             <div class="footer-logo">
-                                 <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                             </div>
-                             <div class="footer-tittle">
-                                 <div class="footer-pera">
-                                     <p class="info1">221B Baker Street, P.O Box 353 Park <br> Road, USA - 215431</p>
-                                     <p class="info2">info@yourdomain.com</p>
-                                </div>
-                             </div>
-                             <div class="footer-social">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fas fa-globe"></i></a>
-                                <a href="#"><i class="fab fa-behance"></i></a>
-                            </div>
-                         </div>
-                       </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Quick Links</h4>
-                                <ul>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="about.html">Features</a></li>
-                                    <li><a href="single-blog.html">Pricing</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-7">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Support</h4>
-                                <ul>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Terms & Conditions</a></li>
-                                    <li><a href="#"> Sitemap</a></li>
-                                    <li><a href="#">FAQs</a></li>
-                                    <li><a href="#">Report a bugb</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-5">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Core Features</h4>
-                                <ul>
-                                 <li><a href="#">Email Marketing</a></li>
-                                 <li><a href="#"> Offline SEO</a></li>
-                                 <li><a href="#">Social Media Marketing</a></li>
-                                 <li><a href="#">Lead Generation</a></li>
-                                 <li><a href="#"> 24/7 Support</a></li>
-                             </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- footer-bottom aera -->
-
-        
+    
         <div class="footer-bottom-area footer-bg">
             <div class="container">
                 <div class="footer-border">

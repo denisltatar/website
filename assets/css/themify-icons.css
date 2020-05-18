@@ -916,6 +916,7 @@
 }
 .ti-youtube:before {
 	content: "\e728";
+	color: rgb(255, 79, 79);
 }
 .ti-vimeo:before {
 	content: "\e729";
@@ -980,6 +981,7 @@
 }
 .ti-instagram:before {
 	content: "\e73d";
+	color: rgb(255, 79, 79);
 }
 .ti-google:before {
 	content: "\e73e";

@@ -292,6 +292,57 @@
         }
     }
 
+    // Adding a Pop-Up NutriFit
+    // Get the modal
+    var modal9 = document.getElementById("myModal9");
+    // Get the button that opens the modal
+    var btn9 = document.getElementById("myBtn9");
+    // Get the <span> element that closes the modal
+    var span9 = document.getElementsByClassName("close9")[0];
+
+    // When the user clicks on the button, open the modal 
+    btn9.onclick = function () {
+        modal9.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span9.onclick = function () {
+        modal9.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal9) {
+            modal9.style.display = "none";
+        }
+    }
+
+    // Adding a Pop-Up Viva
+    // Get the modal
+    var modal10 = document.getElementById("myModal10");
+    // Get the button that opens the modal
+    var btn10 = document.getElementById("myBtn10");
+    // Get the <span> element that closes the modal
+    var span10 = document.getElementsByClassName("close10")[0];
+
+    // When the user clicks on the button, open the modal 
+    btn10.onclick = function () {
+        modal10.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span10.onclick = function () {
+        modal10.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal10) {
+            modal10.style.display = "none";
+        }
+    }
+
+
     // Adding a Pop-Up (Project 3) Mood Playlist
     // Get the modal
     var modal3 = document.getElementById("myModal3");
@@ -633,7 +684,7 @@
     // Get the button that opens the modal
     var btnd9 = document.getElementById("myBtnd9");
     // Get the <span> element that closes the modal
-    var span9 = document.getElementsByClassName("closed9")[0];
+    var spand9 = document.getElementsByClassName("closed9")[0];
 
     // When the user clicks on the button, open the modal 
     btnd9.onclick = function () {

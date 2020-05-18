@@ -16,6 +16,10 @@ html {
   color: black;
 }
 
+#nav-bar-padding {
+  padding-left: 150px;
+}
+
 .nav-text {
   color: black;
 }
@@ -65,6 +69,7 @@ html {
 /* Design Project Start */
 #title-header {
   color: black;
+  padding-top: 60px;
 }
 
 /* Design Project End */
@@ -92,6 +97,11 @@ html {
 }
 
 /* Project 1 Modal */
+#link-to-site {
+  color: rgb(255, 79, 79);
+}
+
+
 /* The Modal (background) */
 /* Button */
 #myBtn {
@@ -352,6 +362,147 @@ a:hover > i {
   text-decoration: none;
   cursor: pointer;
 }
+
+/* Project Nutrifit ******************************************/
+/* The Modal (background) */
+/* Button */
+#myBtn9 {
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background: transparent;
+  border: 0;
+}
+
+#myBtn9:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color:  rgba(0,0,0,0.19);
+  color: white;
+}
+
+#video-para {
+  padding: 150px;
+  font: normal 35px/45px roboto;
+  font-family: roboto;
+}
+
+
+#myModal9 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content Box */
+.modal-content9 {
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 20px solid rgb(255, 255, 255);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Paragraphs! */
+.modal-content9 p {
+  color: rgb(114, 114, 114);
+}
+
+.modal-content9 .para-bold {
+  font: normal 20px/25px roboto;
+  font-family: roboto;
+  color: rgb(0, 0, 0);
+}
+
+/* The Close Button */
+.close9 {
+  color: rgb(255, 180, 180);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.close9:hover,
+.close9:focus {
+  color: rgb(255, 5, 5);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Project Viva */
+/* The Modal (background) */
+/* Button */
+#myBtn10 {
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background: transparent;
+  border: 0;
+}
+
+#myBtn10:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color:  rgba(0,0,0,0.19);
+  color: white;
+}
+
+
+#myModal10 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content Box */
+.modal-content10 {
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 20px solid rgb(255, 255, 255);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Paragraphs! */
+.modal-content10 p {
+  color: rgb(114, 114, 114);
+}
+
+.modal-content10 .para-bold {
+  font: normal 20px/25px roboto;
+  font-family: roboto;
+  color: rgb(0, 0, 0);
+}
+
+/* The Close Button */
+.close10 {
+  color: rgb(255, 180, 180);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.close10:hover,
+.close10:focus {
+  color: rgb(255, 5, 5);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
 
 
 /* Portfolio Website */
