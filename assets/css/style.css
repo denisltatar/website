@@ -239,6 +239,7 @@ a:hover > i {
 .para {
   font: normal 500 17px/30px roboto;
   font-family: 'Helvetica';
+  color: rgb(114, 114, 114);
 }
 
 
@@ -487,17 +488,8 @@ a:hover > i {
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
-/* Paragraphs! */
-.modal-content10 p {
-  color: rgb(114, 114, 114);
-}
 
-.modal-content10 .para-bold {
-  font: normal 20px/25px roboto;
-  font-family: roboto;
-  font-family: 'Helvetica';
-  color: rgb(0, 0, 0);
-}
+
 
 /* The Close Button */
 .close10 {
