@@ -35,11 +35,32 @@
 	// $send = mail($to, $subject, $body, $headers);
 	
 	// New Stuff (Denis)
-	if (isset($_POST['submit'])){
+	/* if (isset($_POST['submit'])){
 		// Script to send email
 		$name = $_POST['name'];
 		$mailFrom = $_POST['mail'];
 		$subject = "Message from Personal Portfolio Site";
+		$message = $_POST['message'];
+
+		// Need to change this
+		$mailTo = "denis.tatar8@gmail.com";
+		$headers = "From: ".$mailFrom;
+		$txt = "You have received an email from ".$name.".\n\n".$message;
+
+		// Sending out mail!
+		mail($mailTo, $subject, $txt, $headers);
+		
+		// Taking us back to the main page
+		// header("Location: index.html?mailsend");
+		header('Location: index.html');
+	} */
+
+	// New Stuff from Viva
+	if (isset($_POST['submit'])){
+		// Script to send email
+		$name = $_POST['name'];
+		$mailFrom = $_POST['mail'];
+		$subject = $_POST['subject'];
 		$message = $_POST['message'];
 
 		// Need to change this

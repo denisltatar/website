@@ -78,34 +78,17 @@
                         </div> -->
                         <div class="col-xl-8 col-lg-8 col-md-8">
                             <!-- Main-menu -->
-                            <div class="main-menu f-right d-none d-lg-block" >
+                            <div class="main-menu f-right d-lg-block">
                                 <nav> 
                                     <ul id="navigation" class="nav-text">    
                                         <li><a href="#home"> Home</a></li>
                                         <li><a href="#About-me">About</a></li>
                                         <li><a href="#projects">Projects</a></li>
-                                        <li><a href="#contact-form">Contact</a></li>
-                                        <!-- <li><a href="blog.html">Blog</a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="single-blog.html">Blog Details</a></li>
-                                            </ul>
-                                        </li> 
-                                        <li><a href="#">Pages</a>
-                                            <ul class="submenu">
-                                                <li><a href="elements.html">Element</a></li>
-                                            </ul>
-                                        </li> -->
+                                        <li><a href="#contact-me">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>   
-                        <!--     
-                        <div class="col-xl-2 col-lg-2 col-md-3">
-                            <div class="header-right-btn f-right d-none d-lg-block">
-                                <a href="#" class="btn header-btn">Contact Us</a>
-                            </div>
-                        </div> -->
                         <!-- Mobile Menu -->
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
@@ -145,6 +128,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- 
                 <div class="single-slider slider-height d-flex align-items-center" data-background="assets/img/hero/h1_hero.png">
                     <div class="container">
                         <div class="row d-flex align-items-center">
@@ -152,7 +136,7 @@
                                 <div class="hero__caption">
                                     <h1 data-animation="fadeInLeft" data-delay=".4s">We Collect<br> High Quality Leads</h1>
                                     <p data-animation="fadeInLeft" data-delay=".6s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravi.</p>
-                                    <!-- Hero-btn -->
+                                    <!-- Hero-btn 
                                     <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s">
                                         <a href="industries.html" class="btn hero-btn">Contact Us</a>
                                     </div>
@@ -165,7 +149,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <!-- Slider Area End-->
@@ -217,7 +201,7 @@
                             <button id="myBtn9" id="mobile-cover">
                                 <img id="mobile" src="./assets/img/Nutrifit/Group 49.png" alt="" width="215" height="410">
                             </button>
-                            <p class="para-bold" id="new-project-title">NutriFit</p>
+                            <h2 class="para-bold" id="new-project-title">NutriFit</h2>
                             <!-- <h2 id="title-project">Porsche Car Connect</h2> -->
                         </div>
                 
@@ -1572,54 +1556,24 @@
         <!-- ============================= Coding Projects End ============================= -->
 
         <!-- ============================= Start Contact Me ============================= -->
-        <div class="container">
+        <div class="container" id="contact-me">
             <!-- <h3 class="text-center" id="contact-heading">Let's get in touch</h3> -->
             <div class="section-tittle text-center">
                 <h2 id="title-header">LET'S GET IN TOUCH</h2>
             </div>
+  
+            <!-- New Contact Form -->
+            <form class="contact-form" action="contact.php" method="post">
+                <input id="button-text" name="name" type="text" class="feedback-input" placeholder="Name" style="font-family:Helvetica;"/>
+                <input id="button-text" name="mail" type="text" class="feedback-input" placeholder="Email" style="font-family:Helvetica;" />
+                <input id="button-text" name="subject" type="text" class="feedback-input" placeholder="Subject"  style="font-family:Helvetica;"/>
+                <textarea id="button-text" name="message" class="feedback-input" placeholder="Your Message" style="font-family:Helvetica;"></textarea>
+                <input id="submit-text" name="submit" type="submit" value="Submit" style="font-size: 20px;"/>
 
-
-                <!-- Cry for help -->
-                <form class="new-form" id="contact-form" action="contact.php">
-                    <p class="contact-text">Dear Denis,</p>
-                    <p class="contact-text">My
-                        <label for="your-name">name</label> is
-                        <input id="button-text" name="name" type="text" class="feedback-input" minlength="3" placeholder="(your name here)" required> and
-                    </p>
-                
-                    <p class="contact-text">my
-                        <label for="email">email address</label> is
-                        <input id="button-text" name="mail" type="text" class="feedback-input" placeholder="(your email address)" required>
-                    </p>
-                
-                    <p class="contact-text"> I have a
-                        <label for="your-message">message</label> for you,</p>
-                
-                    <p class="contact-text">
-                        <textarea id="button-text" name="message" class="feedback-input expanding"  placeholder="(your message here)"
-                            required></textarea>
-                    </p>
-                    <p class="contact-text">
-                        <button id="submit-text" name="submit" type="submit" value="Send">
-                            <svg version="1.1" class="send-icn" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="36px"
-                                viewBox="0 0 100 36" enable-background="new 0 0 100 36" xml:space="preserve">
-                                <path d="M100,0L100,0 M23.8,7.1L100,0L40.9,36l-4.7-7.5L22,34.8l-4-11L0,30.5L16.4,8.7l5.4,15L23,7L23.8,7.1z M16.8,20.4l-1.5-4.3
-                                l-5.1,6.7L16.8,20.4z M34.4,25.4l-8.1-13.1L25,29.6L34.4,25.4z M35.2,13.2l8.1,13.1L70,9.9L35.2,13.2z" />
-                            </svg>
-                            <small>send</small>
-                        </button>
-                    </p>
-                </form>
-                
-            </div>
-    
-    
-            </div>
-        </section>
-    
+            </form>
+        </div>
         <!-- ============================= End Contact Me ============================= -->
-
+        
 
         <!-- What We do start-->
          <!-- 
